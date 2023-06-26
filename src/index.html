@@ -17,6 +17,7 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -24,10 +25,73 @@
     ></script>
   </head>
   <body>
-    <section>
-      <div class="py-3 gradient-bg">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid mx-3">
+    <section class="gradient-bg">
+      <header class="header">
+        <a class="title" href="index.html">Casho</a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li>
+              <a
+                class="navigation-link active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="navigation-link" href="team.html">About</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">How it works</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">Token</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">For business</a>
+            </li>
+            <li>
+              <a
+                class="navigation-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+                <img
+                  src="assets/images/chevron-up.png"
+                  class="ms-2 mt-1"
+                  style="width: 10px"
+                  alt=""
+                />
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item lg-text-center" href="#"
+                    >White Paper</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-navigation-btn">
+          <img
+            src="assets/images/ic_round-menu.png"
+            class="mobile-nav-icon menu"
+            alt=""
+          />
+          <img
+            src="assets/images/close.png"
+            class="mobile-nav-icon close"
+            alt=""
+          />
+        </div>
+      </header>
+      <!-- <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid mx-md-3">
             <a class="title" href="index.html">Casho</a>
             <button
               class="navbar-toggler"
@@ -83,38 +147,76 @@
               </ul>
             </div>
           </div>
-        </nav>
-        <div class="p-5 m-5">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h1 class="hero-title mb-3">Get extra cash with Casho.</h1>
-              <p class="hero-sub-title mb-5 pb-3">
-                The Next Generation of Data Ownership,<br />
-                powered by web3
-              </p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <div>
-                  <img
-                    src="assets/images/app-store-badge.png"
-                    class="d-block mx-lg-auto img-fluid"
+        </nav> -->
+      <div class="p-lg-5 m-lg-5">
+        <div class="row align-items-center w-100 m-0">
+          <div class="col-lg-6">
+            <h1 class="hero-title mb-3">Get extra cash with Casho.</h1>
+            <p class="hero-sub-title mb-5 pb-3">
+              The Next Generation of Data Ownership,<br />
+              powered by web3
+            </p>
+            <div class="coming-soon d-lg-block d-none">COMING SOON</div>
+            <div class="gap-2 d-lg-flex justify-content-start d-none">
+              <div>
+                <a
+                  ><img
+                    srcset="
+                      assets/images/app-store-badge.png    1x,
+                      assets/images/app-store-badge@2x.png 2x
+                    "
+                    class="d-block mx-auto img-fluid cursor-pointer"
                     alt=""
-                  />
-                </div>
-                <div>
-                  <img
-                    src="assets/images/google-play-badge.png"
-                    class="d-block mx-lg-auto img-fluid"
+                /></a>
+              </div>
+              <div>
+                <a
+                  ><img
+                    srcset="
+                      assets/images/google-play-badge.png    1x,
+                      assets/images/google-play-badge@2x.png 2x
+                    "
+                    class="d-block mx-auto img-fluid cursor-pointer"
                     alt=""
-                  />
-                </div>
+                /></a>
               </div>
             </div>
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img
-                src="assets/images/hero-image.png"
-                class="d-block mx-lg-auto img-fluid"
-                alt=""
-              />
+          </div>
+          <div class="col-lg-6">
+            <img
+              srcset="
+                assets/images/hero-image.png    1x,
+                assets/images/hero-image@2x.png 2x
+              "
+              class="d-block mx-auto img-fluid"
+              alt=""
+            />
+            <div class="d-lg-none d-flex flex-column align-items-center mt-5">
+              <div class="coming-soon">COMING SOON</div>
+              <div class="gap-2 justify-content-center d-flex">
+                <div>
+                  <a
+                    ><img
+                      srcset="
+                        assets/images/app-store-badge.png    1x,
+                        assets/images/app-store-badge@2x.png 2x
+                      "
+                      class="d-block mx-auto img-fluid cursor-pointer"
+                      alt=""
+                  /></a>
+                </div>
+                <div>
+                  <a>
+                    <img
+                      srcset="
+                        assets/images/google-play-badge.png    1x,
+                        assets/images/google-play-badge@2x.png 2x
+                      "
+                      class="d-block mx-auto img-fluid cursor-pointer"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -123,23 +225,26 @@
 
     <section>
       <div class="container">
-        <div class="row flex-row-reverse p-5 m-5 align-items-center">
+        <div class="row flex-lg-row-reverse p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
             <h1 class="section-heading mb-3">Securely connect</h1>
-            <p class="section-content mb-5 pb-3">
+            <p class="section-content mb-lg-5 pb-lg-3">
               Download the Casho app and link your data from various brands.
               Casho supports a variety of data sources, including your bank
               account, credit cards, and shopping history. The more data you
               link, the more opportunities you'll have to earn rewards
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a class="learn-button">Learn more</a>
+            <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
+              <button class="learn-button">Learn more</button>
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-6">
+          <div class="col-lg-6">
             <img
-              src="assets/images/iphone-section-2.png"
-              class="d-block mx-lg-auto img-fluid"
+              srcset="
+                assets/images/iphone-section-2.png    1x,
+                assets/images/iphone-section-2@2x.png 2x
+              "
+              class="d-block mx-auto img-fluid iphone-img"
               alt=""
             />
           </div>
@@ -149,24 +254,27 @@
 
     <section>
       <div class="container">
-        <div class="row p-5 m-5 align-items-center">
+        <div class="row p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
             <h1 class="section-heading mb-3">See Fun Insights</h1>
-            <p class="section-content mb-5 pb-3">
+            <p class="section-content mb-lg-5 pb-lg-3">
               Once you've linked your data sources, you can explore the
               fascinating world of data insights with Casho. Discover unique
               patterns, trends, and correlations within your data. Gain valuable
               knowledge about your spending habits, preferences, and behaviours
               through the insightful analysis provided by Casho.
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a class="learn-button">Learn more</a>
+            <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
+              <button class="learn-button">Learn more</button>
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-6">
+          <div class="col-lg-6">
             <img
-              src="assets/images/iphone-section-3.png"
-              class="d-block mx-lg-auto img-fluid"
+              srcset="
+                assets/images/iphone-section-3.png    1x,
+                assets/images/iphone-section-3@2x.png 2x
+              "
+              class="d-block mx-auto img-fluid iphone-img"
               alt=""
             />
           </div>
@@ -176,22 +284,25 @@
 
     <section>
       <div class="container">
-        <div class="row flex-row-reverse p-5 m-5 align-items-center">
+        <div class="row flex-lg-row-reverse p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
             <h1 class="section-heading mb-3">Earn Real Money</h1>
-            <p class="section-content mb-5 pb-3">
+            <p class="section-content mb-lg-5 pb-lg-3">
               The best part about Casho is that you can earn rewards for sharing
               your data. The more data you share, the more rewards you can earn.
               Rewards can be redeemed for gift cards, cash, or crypto
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a class="learn-button">Learn more</a>
+            <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
+              <button class="learn-button">Learn more</button>
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-6">
+          <div class="col-lg-6">
             <img
-              src="assets/images/iphone-section-4.png"
-              class="d-block mx-lg-auto img-fluid"
+              srcset="
+                assets/images/iphone-section-4.png    1x,
+                assets/images/iphone-section-4@2x.png 2x
+              "
+              class="d-block mx-auto img-fluid iphone-img"
               alt=""
             />
           </div>
@@ -199,8 +310,8 @@
       </div>
     </section>
 
-    <section>
-      <div class="background-gradient p-5 pb-0 mb-0">
+    <section class="background-gradient-mobile">
+      <div class="background-gradient p-lg-5 pb-0 mb-0 d-none d-lg-block">
         <div class="m-5 mb-0">
           <div class="container">
             <h1 class="token-section-heading">
@@ -211,7 +322,7 @@
           </div>
         </div>
       </div>
-      <div class="p-5 m-5 pt-0 mt-4">
+      <div class="p-lg-5 m-lg-5 pt-0 mt-4 d-none d-lg-block">
         <div class="container">
           <div class="row">
             <div class="col-6">
@@ -244,30 +355,157 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <img src="assets/images/utility-token.png" alt="" />
+            <div class="col-6 d-none d-lg-block">
+              <img
+                srcset="
+                  assets/images/utility-token.png    1x,
+                  assets/images/utility-token@2x.png 2x
+                "
+                class="d-block mx-auto img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-lg-none d-block container">
+        <h1 class="token-section-heading">
+          The Casho protocol utilises the Casho Utility Token
+        </h1>
+        <p class="section-content pb-3">
+          The Casho Utility Token is the native ERC-20 Utility Token of the
+          Casho Protocol and the decentralized applications built on it. The
+          Casho Utility Token regulates, incentivizes, and rewards the various
+          participants of the AI Protocol.
+        </p>
+        <img
+          srcset="
+            assets/images/utility-token-mobile.png    1x,
+            assets/images/utility-token-mobile@2x.png
+          "
+          class="d-block mx-auto img-fluid"
+          alt=""
+        />
+        <div class="d-flex my-5">
+          <div class="me-5">
+            <div>
+              <div class="token-subtitle">Token Symbol</div>
+              <div class="token-title">CASHO</div>
+            </div>
+            <div>
+              <div class="token-subtitle">Total Supply</div>
+              <div class="token-title">1,000,000,000</div>
+            </div>
+          </div>
+          <div class="ms-5">
+            <div>
+              <div class="token-subtitle">Token Symbol</div>
+              <div class="token-title">$CASHO</div>
+            </div>
+            <div>
+              <div class="token-subtitle">BlockChain Network</div>
+              <div class="token-title">ETH</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <section class="roadmap-bg">
-      <div>
-        <div>
-          Our<br />
-          Roadmap
+    <section class="roadmap-bg">
+      <div class="p-lg-5">
+        <div class="container position-relative p-0">
+          <div class="row my-lg-5">
+            <div class="col-lg-6 py-5">
+              <h1 class="brand-title">Our Roadmap</h1>
+              <p class="brand-content">
+                We are committed to building a sustainable data market that
+                benefits everyone involved. Our roadmap outlines our plans for
+                the future, and we are excited to share it with you.
+              </p>
+            </div>
+            <div class="col-lg-6"></div>
+            <img
+              class="position-absolute roadmap-image d-lg-block d-none"
+              srcset="
+                assets/images/roadmap.png    1x,
+                assets/images/roadmap@2x.png 2x
+              "
+              alt=""
+            />
+            <div class="timeline d-lg-none d-block">
+              <ul>
+                <li>
+                  <div class="item">
+                    <span><img src="assets/images/point.png" alt="" /></span>
+                    <div class="content">
+                      <h3 class="title">Spark <span>Q1 - Q2 2023</span></h3>
+                      <p>Ideation, Research, Whitepaper</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <span><img src="assets/images/point.png" alt="" /></span>
+                    <div class="content">
+                      <h3 class="title">
+                        Debut <span>Q4 2023 - Q1 2024</span>
+                      </h3>
+                      <p>
+                        Token Integration, Insights  Public launch, Grow
+                        Executive, Sales, and Engineering Teams
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <span><img src="assets/images/point.png" alt="" /></span>
+                    <div class="content">
+                      <h3 class="title">Craft <span>Q3 2023</span></h3>
+                      <p>MVP, Beta Launch</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="item">
+                    <span><img src="assets/images/point.png" alt="" /></span>
+                    <div class="content">
+                      <h3 class="title">Surge <span>Q2 2024 onwards</span></h3>
+                      <p>
+                        Mobile extension, Personalized Ads/ Ad tech,polls,
+                        Surveys, Product Expansion Governance launch
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
-    <section>
-      <div class="slider">
-        <div class="d-flex align-items-center slide-track">
+    <section class="brand-bg">
+      <div class="p-lg-5">
+        <div class="m-lg-5">
+          <div class="container py-lg-5">
+            <h1 class="brand-title">Are you a brand?</h1>
+            <p class="brand-content">
+              Get access to fully consensual, consumer-verified data.
+            </p>
+            <button class="learn-button">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div>
+        <div class="d-flex align-items-center slide-track text-nowrap">
           <div class="slide d-flex align-items-center">
             Make money while you sleep<img
-              class="ms-4"
-              src="assets/images/star.png"
+              class="m-4"
+              srcset="assets/images/star.png 1x, assets/images/star@2x.png 2x"
               height="55"
               width="55"
               alt=""
@@ -275,8 +513,17 @@
           </div>
           <div class="slide d-flex align-items-center">
             Make money while you sleep<img
-              class="ms-4"
-              src="assets/images/star.png"
+              class="m-4"
+              srcset="assets/images/star.png 1x, assets/images/star@2x.png 2x"
+              height="55"
+              width="55"
+              alt=""
+            />
+          </div>
+          <div class="slide d-flex align-items-center">
+            Make money while you sleep<img
+              class="m-4"
+              srcset="assets/images/star.png 1x, assets/images/star@2x.png 2x"
               height="55"
               width="55"
               alt=""
@@ -288,7 +535,7 @@
 
     <section>
       <div class="container">
-        <div class="row flex-row-reverse p-5 m-5 align-items-center">
+        <div class="row flex-row-reverse p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
             <h1 class="section-heading mb-3">
               You are generating data 24/7 online, but you're not getting
@@ -297,39 +544,78 @@
             <p class="section-content pb-3">
               Turn your personal data into rewards.
             </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <div class="coming-soon d-lg-block d-none">COMING SOON</div>
+            <div class="gap-2 d-lg-flex justify-content-start d-none">
               <div>
-                <img
-                  src="assets/images/google-play-badge.png"
-                  class="d-block mx-lg-auto img-fluid"
-                  alt=""
-                />
+                <a
+                  ><img
+                    srcset="
+                      assets/images/google-play-badge.png    1x,
+                      assets/images/google-play-badge@2x.png 2x
+                    "
+                    class="d-block mx-auto img-fluid cursor-pointer"
+                    alt=""
+                /></a>
               </div>
               <div>
-                <img
-                  src="assets/images/app-store-badge.png"
-                  class="d-block mx-lg-auto img-fluid"
-                  alt=""
-                />
+                <a
+                  ><img
+                    srcset="
+                      assets/images/app-store-badge.png    1x,
+                      assets/images/app-store-badge@2x.png 2x
+                    "
+                    class="d-block mx-auto img-fluid cursor-pointer"
+                    alt=""
+                /></a>
               </div>
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-6">
+          <div class="col-lg-6">
             <img
-              src="assets/images/iPhone-12-pro.png"
-              class="d-block mx-lg-auto img-fluid"
+              srcset="
+                assets/images/iPhone-12-pro.png    1x,
+                assets/images/iPhone-12-pro@2x.png 2x
+              "
+              class="d-block mx-auto img-fluid iphone-img"
               alt=""
             />
+            <div class="d-lg-none d-flex flex-column align-items-center my-5">
+              <div class="coming-soon">COMING SOON</div>
+              <div class="gap-2 justify-content-center d-flex">
+                <div>
+                  <a
+                    ><img
+                      srcset="
+                        assets/images/app-store-badge.png    1x,
+                        assets/images/app-store-badge@2x.png 2x
+                      "
+                      class="d-block mx-auto img-fluid cursor-pointer"
+                      alt=""
+                  /></a>
+                </div>
+                <div>
+                  <a
+                    ><img
+                      srcset="
+                        assets/images/google-play-badge.png    1x,
+                        assets/images/google-play-badge@2x.png 2x
+                      "
+                      class="d-block mx-auto img-fluid cursor-pointer"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="py-5">
+    <footer class="py-5 d-lg-block d-none">
       <section class="container">
-        <div class="text-center text-md-start mt-5">
+        <div class="text-center text-lg-start mt-5">
           <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-lg-3 mx-auto mb-4">
               <h6 class="title mb-4">Casho</h6>
               <div class="mb-5">
                 <label class="sub-title-footer"
@@ -338,14 +624,49 @@
                 <label class="sub-title-footer">All rights reserved</label>
               </div>
               <div class="d-flex social-icons">
-                <img src="assets/images/logos_twitter.png" alt="" />
-                <img src="assets/images/logos_telegram.png" alt="" />
-                <img src="assets/images/logos_linkedin.png" alt="" />
-                <img src="assets/images/logos_youtube.png" alt="" />
-                <img src="assets/images/logos_Medium.png" alt="" />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_twitter.png    1x,
+                    assets/images/logos_twitter@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_telegram.png    1x,
+                    assets/images/logos_telegram@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_linkedin.png    1x,
+                    assets/images/logos_linkedin@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_youtube.png    1x,
+                    assets/images/logos_youtube@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_Medium.png    1x,
+                    assets/images/logos_Medium@2x.png 2x
+                  "
+                  alt=""
+                />
               </div>
             </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-lg-2 mx-auto mb-4">
               <h6 class="footer-title mb-4">Menu</h6>
               <p>
                 <a href="index.html" class="sub-title">Home</a>
@@ -360,7 +681,7 @@
                 <a href="index.html" class="sub-title">About</a>
               </p>
             </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-lg-3 mx-auto mb-4">
               <h6 class="footer-title mb-4">Resources</h6>
               <p>
                 <a href="#!" class="sub-title">Help center</a>
@@ -375,18 +696,145 @@
                 <a href="#!" class="sub-title">Privacy policy</a>
               </p>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="col-lg-4 mx-auto mb-lg-0 mb-4">
               <h6 class="footer-title mb-4">Download now</h6>
-              <img
-                class="mb-2"
-                src="assets/images/app-store-badge.png"
-                alt=""
-              />
-              <img src="assets/images/google-play-badge.png" alt="" />
+              <div class="d-flex flex-column align-items-start">
+                <a
+                  ><img
+                    class="mb-2 d-block mx-auto img-fluid cursor-pointer"
+                    srcset="
+                      assets/images/app-store-badge.png    1x,
+                      assets/images/app-store-badge@2x.png 2x
+                    "
+                    alt=""
+                /></a>
+                <a
+                  ><img
+                    class="d-block mx-auto img-fluid cursor-pointer"
+                    srcset="
+                      assets/images/google-play-badge.png    1x,
+                      assets/images/google-play-badge@2x.png 2x
+                    "
+                    alt=""
+                /></a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </footer>
+    <footer class="p-4 text-start d-lg-none d-block">
+      <section>
+        <div class="mt-5">
+          <div class="row mt-3">
+            <div class="mb-3">
+              <h6 class="title">Casho</h6>
+            </div>
+            <div class="row pb-3">
+              <div class="col">
+                <h6 class="footer-title mb-4">Menu</h6>
+                <p>
+                  <a href="index.html" class="sub-title">Home</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">App</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Whitepaper</a>
+                </p>
+                <p>
+                  <a href="index.html" class="sub-title">About</a>
+                </p>
+              </div>
+              <div class="col">
+                <h6 class="footer-title mb-4">Resources</h6>
+                <p>
+                  <a href="#!" class="sub-title">Help center</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Contact</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Terms of service</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Privacy policy</a>
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="mb-4">
+                <div class="sub-title-footer">Copyright © 2020 Casho app</div>
+                <div class="sub-title-footer">All rights reserved</div>
+              </div>
+              <div class="d-flex social-icons py-3 my-4">
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_twitter.png    1x,
+                    assets/images/logos_twitter@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_telegram.png    1x,
+                    assets/images/logos_telegram@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_linkedin.png    1x,
+                    assets/images/logos_linkedin@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_youtube.png    1x,
+                    assets/images/logos_youtube@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_Medium.png    1x,
+                    assets/images/logos_Medium@2x.png 2x
+                  "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mb-4 padding-0">
+              <h6 class="footer-title mb-4">Download now</h6>
+              <a
+                ><img
+                  class="img-fluid cursor-pointer"
+                  srcset="
+                    assets/images/app-store-badge.png    1x,
+                    assets/images/app-store-badge@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+              <a
+                ><img
+                  class="img-fluid cursor-pointer ms-2"
+                  srcset="
+                    assets/images/google-play-badge.png    1x,
+                    assets/images/google-play-badge@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

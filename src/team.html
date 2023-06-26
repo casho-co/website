@@ -17,6 +17,10 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -24,10 +28,74 @@
     ></script>
   </head>
   <body>
-    <section>
-      <div class="py-3">
+    <section class="header-section">
+      <header class="header">
+        <a class="title" href="index.html" style="color: #000">Casho</a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li>
+              <a
+                class="navigation-link active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="navigation-link" href="team.html">About</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">How it works</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">Token</a>
+            </li>
+            <li>
+              <a class="navigation-link" href="#">For business</a>
+            </li>
+            <li>
+              <a
+                class="navigation-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+                <img
+                  src="assets/images/chevron-up.png"
+                  class="ms-2 mt-1"
+                  style="width: 10px"
+                  alt=""
+                />
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item lg-text-center" href="#"
+                    >White Paper</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-navigation-btn">
+          <img
+            src="assets/images/ic_round-menu-dark.png"
+            class="mobile-nav-icon menu"
+            alt=""
+          />
+          <img
+            src="assets/images/close.png"
+            class="mobile-nav-icon close"
+            alt=""
+          />
+        </div>
+      </header>
+      <!-- <div class="py-3">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid mx-3">
+          <div class="container-fluid mx-md-3">
             <a class="title" style="color: #000" href="index.html">Casho</a>
             <button
               class="navbar-toggler"
@@ -61,13 +129,17 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle d-flex align-items-center justify-content-between"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Resources
+                    <i
+                      class="ms-1 fa fa-angle-down"
+                      style="font-size: 20px"
+                    ></i>
                   </a>
                   <ul class="dropdown-menu">
                     <li>
@@ -81,12 +153,12 @@
             </div>
           </div>
         </nav>
-      </div>
+      </div> -->
     </section>
 
     <section>
-      <div class="container">
-        <div class="py-5">
+      <div class="container padding-0">
+        <div class="py-lg-5">
           <h1 class="teams-title mb-4">
             We are Empowering Users, Democratizing Data, and Creating a
             Sustainable Data Market
@@ -104,13 +176,17 @@
           </p>
         </div>
         <div class="mb-5 pb-5">
-          <h2 class="team-heading mb-5 pb-5">The Casho Team</h2>
-          <div class="row justify-content-between mb-5 pb-5 g-2">
-            <div
-              class="d-flex flex-column align-items-center col-lg-4 col-md-6 mb-4 casho-card"
-            >
-              <img src="assets/images/user-image.png" alt="" />
-              <div class="p-3">
+          <h2 class="team-heading mb-lg-5 pb-lg-5">The Casho Team</h2>
+          <div class="row mb-5 pb-5 justify-content-between">
+            <div class="d-flex flex-column col-lg-4 col-md-6 mb-4 casho-card">
+              <img
+                srcset="
+                  assets/images/user-image.png    1x,
+                  assets/images/user-image@2x.png 2x
+                "
+                alt=""
+              />
+              <div class="p-4">
                 <p class="card-title">
                   Sandeep<br />
                   Co-Founder & CEO
@@ -120,16 +196,32 @@
                   to build public utility networks.
                 </p>
                 <div class="d-flex social-icons">
-                  <img src="assets/images/logos_twitter.png" alt="" />
-                  <img src="assets/images/logos_linkedin.png" alt="" />
+                  <img
+                    srcset="
+                      assets/images/logos_twitter.png    1x,
+                      assets/images/logos_twitter@2x.png 2x
+                    "
+                    alt=""
+                  />
+                  <img
+                    srcset="
+                      assets/images/logos_linkedin.png    1x,
+                      assets/images/logos_linkedin@2x.png 2x
+                    "
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div
-              class="d-flex flex-column align-items-center col-lg-4 col-md-6 mb-4 casho-card"
-            >
-              <img src="assets/images/user-image-2.png" alt="" />
-              <div class="p-3">
+            <div class="d-flex flex-column col-lg-4 col-md-6 mb-4 casho-card">
+              <img
+                srcset="
+                  assets/images/user-image-2.png    1x,
+                  assets/images/user-image-2@2x.png 2x
+                "
+                alt=""
+              />
+              <div class="p-4">
                 <p class="card-title">
                   Sandeep<br />
                   Co-Founder & CEO
@@ -139,16 +231,32 @@
                   to build public utility networks.
                 </p>
                 <div class="d-flex social-icons">
-                  <img src="assets/images/logos_twitter.png" alt="" />
-                  <img src="assets/images/logos_linkedin.png" alt="" />
+                  <img
+                    srcset="
+                      assets/images/logos_twitter.png    1x,
+                      assets/images/logos_twitter@2x.png 2x
+                    "
+                    alt=""
+                  />
+                  <img
+                    srcset="
+                      assets/images/logos_linkedin.png    1x,
+                      assets/images/logos_linkedin@2x.png 2x
+                    "
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div
-              class="d-flex flex-column align-items-center col-lg-4 col-md-6 mb-4 casho-card"
-            >
-              <img src="assets/images/user-image-3.png" alt="" />
-              <div class="p-3">
+            <div class="d-flex flex-column col-lg-4 col-md-6 mb-4 casho-card">
+              <img
+                srcset="
+                  assets/images/user-image-3.png    1x,
+                  assets/images/user-image-3@2x.png 2x
+                "
+                alt=""
+              />
+              <div class="p-4">
                 <p class="card-title">
                   Sandeep<br />
                   Co-Founder & CEO
@@ -158,16 +266,32 @@
                   to build public utility networks.
                 </p>
                 <div class="d-flex social-icons">
-                  <img src="assets/images/logos_twitter.png" alt="" />
-                  <img src="assets/images/logos_linkedin.png" alt="" />
+                  <img
+                    srcset="
+                      assets/images/logos_twitter.png    1x,
+                      assets/images/logos_twitter@2x.png 2x
+                    "
+                    alt=""
+                  />
+                  <img
+                    srcset="
+                      assets/images/logos_linkedin.png    1x,
+                      assets/images/logos_linkedin@2x.png 2x
+                    "
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div
-              class="d-flex flex-column align-items-center col-lg-4 col-md-6 mb-4 casho-card"
-            >
-              <img src="assets/images/user-image.png" alt="" />
-              <div class="p-3">
+            <div class="d-flex flex-column col-lg-4 col-md-6 mb-4 casho-card">
+              <img
+                srcset="
+                  assets/images/user-image.png    1x,
+                  assets/images/user-image@2x.png 2x
+                "
+                alt=""
+              />
+              <div class="p-4">
                 <p class="card-title">
                   Sandeep<br />
                   Co-Founder & CEO
@@ -177,16 +301,26 @@
                   to build public utility networks.
                 </p>
                 <div class="d-flex social-icons">
-                  <img src="assets/images/logos_twitter.png" alt="" />
-                  <img src="assets/images/logos_linkedin.png" alt="" />
+                  <img
+                    srcset="
+                      assets/images/logos_twitter.png    1x,
+                      assets/images/logos_twitter@2x.png 2x
+                    "
+                    alt=""
+                  />
+                  <img srcset="assets/images/logos_linkedin.png" alt="" />
                 </div>
               </div>
             </div>
-            <div
-              class="d-flex flex-column align-items-center col-lg-4 col-md-6 mb-4 casho-card"
-            >
-              <img src="assets/images/user-image-2.png" alt="" />
-              <div class="p-3">
+            <div class="d-flex flex-column col-lg-4 col-md-6 mb-4 casho-card">
+              <img
+                srcset="
+                  assets/images/user-image-2.png    1x,
+                  assets/images/user-image-2@2x.png 2x
+                "
+                alt=""
+              />
+              <div class="p-4">
                 <p class="card-title">
                   Sandeep<br />
                   Co-Founder & CEO
@@ -196,16 +330,32 @@
                   to build public utility networks.
                 </p>
                 <div class="d-flex social-icons">
-                  <img src="assets/images/logos_twitter.png" alt="" />
-                  <img src="assets/images/logos_linkedin.png" alt="" />
+                  <img
+                    srcset="
+                      assets/images/logos_twitter.png    1x,
+                      assets/images/logos_twitter@2x.png 2x
+                    "
+                    alt=""
+                  />
+                  <img
+                    srcset="
+                      assets/images/logos_linkedin.png    1x,
+                      assets/images/logos_linkedin@2x.png 2x
+                    "
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
-            <div
-              class="d-flex flex-column align-items-center col-lg-4 col-md-6 mb-4 casho-card"
-            >
-              <img src="assets/images/user-image-3.png" alt="" />
-              <div class="p-3">
+            <div class="d-flex flex-column col-lg-4 col-md-6 mb-4 casho-card">
+              <img
+                srcset="
+                  assets/images/user-image-3.png    1x,
+                  assets/images/user-image-3@2x.png 2x
+                "
+                alt=""
+              />
+              <div class="p-4">
                 <p class="card-title">
                   Sandeep<br />
                   Co-Founder & CEO
@@ -215,8 +365,20 @@
                   to build public utility networks.
                 </p>
                 <div class="d-flex social-icons">
-                  <img src="assets/images/logos_twitter.png" alt="" />
-                  <img src="assets/images/logos_linkedin.png" alt="" />
+                  <img
+                    srcset="
+                      assets/images/logos_twitter.png    1x,
+                      assets/images/logos_twitter@2x.png 2x
+                    "
+                    alt=""
+                  />
+                  <img
+                    srcset="
+                      assets/images/logos_linkedin.png    1x,
+                      assets/images/logos_linkedin@2x.png 2x
+                    "
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -225,11 +387,11 @@
       </div>
     </section>
 
-    <footer class="py-5">
+    <footer class="py-5 d-lg-block d-none">
       <section class="container">
-        <div class="text-center text-md-start mt-5">
+        <div class="text-center text-lg-start mt-5">
           <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-lg-3 mx-auto mb-4">
               <h6 class="title mb-4">Casho</h6>
               <div class="mb-5">
                 <label class="sub-title-footer"
@@ -238,14 +400,49 @@
                 <label class="sub-title-footer">All rights reserved</label>
               </div>
               <div class="d-flex social-icons">
-                <img src="assets/images/logos_twitter.png" alt="" />
-                <img src="assets/images/logos_telegram.png" alt="" />
-                <img src="assets/images/logos_linkedin.png" alt="" />
-                <img src="assets/images/logos_youtube.png" alt="" />
-                <img src="assets/images/logos_Medium.png" alt="" />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_twitter.png    1x,
+                    assets/images/logos_twitter@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_telegram.png    1x,
+                    assets/images/logos_telegram@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_linkedin.png    1x,
+                    assets/images/logos_linkedin@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_youtube.png    1x,
+                    assets/images/logos_youtube@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_Medium.png    1x,
+                    assets/images/logos_Medium@2x.png 2x
+                  "
+                  alt=""
+                />
               </div>
             </div>
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-lg-2 mx-auto mb-4">
               <h6 class="footer-title mb-4">Menu</h6>
               <p>
                 <a href="index.html" class="sub-title">Home</a>
@@ -257,10 +454,10 @@
                 <a href="#!" class="sub-title">Whitepaper</a>
               </p>
               <p>
-                <a href="team.html" class="sub-title">About</a>
+                <a href="index.html" class="sub-title">About</a>
               </p>
             </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-lg-3 mx-auto mb-4">
               <h6 class="footer-title mb-4">Resources</h6>
               <p>
                 <a href="#!" class="sub-title">Help center</a>
@@ -275,18 +472,145 @@
                 <a href="#!" class="sub-title">Privacy policy</a>
               </p>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <h6 class="footer-title text-start mb-4">Download now</h6>
-              <img
-                class="mb-lg-2 me-2"
-                src="assets/images/app-store-badge.png"
-                alt=""
-              />
-              <img src="assets/images/google-play-badge.png" alt="" />
+            <div class="col-lg-4 mx-auto mb-lg-0 mb-4">
+              <h6 class="footer-title mb-4">Download now</h6>
+              <div class="d-flex flex-column align-items-start">
+                <a
+                  ><img
+                    class="mb-2 d-block mx-auto img-fluid cursor-pointer"
+                    srcset="
+                      assets/images/app-store-badge.png    1x,
+                      assets/images/app-store-badge@2x.png 2x
+                    "
+                    alt=""
+                /></a>
+                <a
+                  ><img
+                    class="d-block mx-auto img-fluid cursor-pointer"
+                    srcset="
+                      assets/images/google-play-badge.png    1x,
+                      assets/images/google-play-badge@2x.png 2x
+                    "
+                    alt=""
+                /></a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </footer>
+    <footer class="p-4 text-start d-lg-none d-block">
+      <section>
+        <div class="mt-5">
+          <div class="row mt-3">
+            <div class="mb-3">
+              <h6 class="title">Casho</h6>
+            </div>
+            <div class="row pb-3">
+              <div class="col">
+                <h6 class="footer-title mb-4">Menu</h6>
+                <p>
+                  <a href="index.html" class="sub-title">Home</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">App</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Whitepaper</a>
+                </p>
+                <p>
+                  <a href="index.html" class="sub-title">About</a>
+                </p>
+              </div>
+              <div class="col">
+                <h6 class="footer-title mb-4">Resources</h6>
+                <p>
+                  <a href="#!" class="sub-title">Help center</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Contact</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Terms of service</a>
+                </p>
+                <p>
+                  <a href="#!" class="sub-title">Privacy policy</a>
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="mb-4">
+                <div class="sub-title-footer">Copyright © 2020 Casho app</div>
+                <div class="sub-title-footer">All rights reserved</div>
+              </div>
+              <div class="d-flex social-icons py-3 my-4">
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_twitter.png    1x,
+                    assets/images/logos_twitter@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_telegram.png    1x,
+                    assets/images/logos_telegram@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_linkedin.png    1x,
+                    assets/images/logos_linkedin@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_youtube.png    1x,
+                    assets/images/logos_youtube@2x.png 2x
+                  "
+                  alt=""
+                />
+                <img
+                  class="cursor-pointer"
+                  srcset="
+                    assets/images/logos_Medium.png    1x,
+                    assets/images/logos_Medium@2x.png 2x
+                  "
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="mb-4 padding-0">
+              <h6 class="footer-title mb-4">Download now</h6>
+              <a
+                ><img
+                  class="img-fluid cursor-pointer"
+                  srcset="
+                    assets/images/app-store-badge.png    1x,
+                    assets/images/app-store-badge@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+              <a
+                ><img
+                  class="img-fluid cursor-pointer ms-2"
+                  srcset="
+                    assets/images/google-play-badge.png    1x,
+                    assets/images/google-play-badge@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
