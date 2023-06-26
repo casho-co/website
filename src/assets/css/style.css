@@ -55,7 +55,7 @@ footer {
 
 .dropdown-item {
   padding: 0 !important;
-  color: #6c4efe !important;
+  color: #000 !important;
   font-size: 16px;
   background-color: #fff !important;
   font-weight: 600 !important;
@@ -81,15 +81,19 @@ footer {
 }
 
 .navigation-link:hover,
-.navigation-link:active,
+.navigation-link:active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
 .navigation-link.active {
+  text-underline-offset: 5px;
+  text-decoration: underline;
   font-weight: 700;
   color: #000;
 }
 .dropdown-item:hover,
 .dropdown-item:active {
-  font-weight: 700 !important;
-  color: #000 !important;
+  color: #6c4efe !important;
 }
 
 .mobile-navigation-btn {
@@ -167,7 +171,7 @@ footer {
   .dropdown-item {
     padding-top: 10px !important;
     text-align: start !important;
-    color: #6c4efe !important;
+    color: #000 !important;
     font-size: 14px;
     font-weight: 400 !important;
   }
@@ -377,7 +381,7 @@ footer {
 }
 
 .roadmap-bg {
-  height: 1370px;
+  height: 1280px;
   background-repeat: no-repeat;
   background-image: image-set(
     url("../images/roadmap-bg.png") 1x,
@@ -387,6 +391,7 @@ footer {
 }
 
 .brand-bg {
+  max-height: 464px;
   padding: 120px;
   background-repeat: no-repeat;
   background-image: image-set(
