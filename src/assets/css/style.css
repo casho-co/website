@@ -85,7 +85,7 @@ footer {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-.navigation-link.active {
+.navigation-list .active a.navigation-link {
   text-underline-offset: 5px;
   text-decoration: underline;
   font-weight: 700;

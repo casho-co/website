@@ -6,3 +6,7 @@ const toggleNavbar = () => {
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
+
+jQuery(".navigation-link").on("mouseenter mouseleave", function () {
+  jQuery(this).parent().siblings(".current").toggleClass("active");
+});
