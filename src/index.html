@@ -22,12 +22,13 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <section class="gradient-bg">
@@ -153,8 +154,10 @@
       <div class="p-lg-5 m-lg-5">
         <div class="row align-items-center w-100 m-0">
           <div class="col-lg-6">
-            <h1 class="hero-title mb-3">Get extra cash with Casho.</h1>
-            <p class="hero-sub-title mb-5 pb-3">
+            <h1 data-aos="fade-right" class="hero-title mb-3">
+              Get extra cash with Casho.
+            </h1>
+            <p data-aos="fade-right" class="hero-sub-title mb-5 pb-3">
               The Next Generation of Data Ownership,<br />
               powered by web3
             </p>
@@ -186,6 +189,7 @@
           </div>
           <div class="col-lg-6">
             <img
+              data-aos="fade-up"
               srcset="
                 assets/images/hero-image.png    1x,
                 assets/images/hero-image@2x.png 2x
@@ -229,8 +233,10 @@
       <div class="container">
         <div class="row flex-lg-row-reverse p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
-            <h1 class="section-heading mb-3">Securely connect</h1>
-            <p class="section-content mb-lg-5 pb-lg-3">
+            <h1 data-aos="fade-left" class="section-heading mb-3">
+              Securely connect
+            </h1>
+            <p data-aos="fade-left" class="section-content mb-lg-5 pb-lg-3">
               Download the Casho app and link your data from various brands.
               Casho supports a variety of data sources, including your bank
               account, credit cards, and shopping history. The more data you
@@ -242,6 +248,7 @@
           </div>
           <div class="col-lg-6">
             <img
+              data-aos="fade-up"
               srcset="
                 assets/images/iphone-section-2.png    1x,
                 assets/images/iphone-section-2@2x.png 2x
@@ -258,8 +265,10 @@
       <div class="container">
         <div class="row p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
-            <h1 class="section-heading mb-3">See Fun Insights</h1>
-            <p class="section-content mb-lg-5 pb-lg-3">
+            <h1 data-aos="fade-right" class="section-heading mb-3">
+              See Fun Insights
+            </h1>
+            <p data-aos="fade-right" class="section-content mb-lg-5 pb-lg-3">
               Once you've linked your data sources, you can explore the
               fascinating world of data insights with Casho. Discover unique
               patterns, trends, and correlations within your data. Gain valuable
@@ -272,6 +281,7 @@
           </div>
           <div class="col-lg-6">
             <img
+              data-aos="fade-up"
               srcset="
                 assets/images/iphone-section-3.png    1x,
                 assets/images/iphone-section-3@2x.png 2x
@@ -288,8 +298,10 @@
       <div class="container">
         <div class="row flex-lg-row-reverse p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
-            <h1 class="section-heading mb-3">Earn Real Money</h1>
-            <p class="section-content mb-lg-5 pb-lg-3">
+            <h1 data-aos="fade-left" class="section-heading mb-3">
+              Earn Real Money
+            </h1>
+            <p data-aos="fade-left" class="section-content mb-lg-5 pb-lg-3">
               The best part about Casho is that you can earn rewards for sharing
               your data. The more data you share, the more rewards you can earn.
               Rewards can be redeemed for gift cards, cash, or crypto
@@ -300,6 +312,7 @@
           </div>
           <div class="col-lg-6">
             <img
+              data-aos="fade-up"
               srcset="
                 assets/images/iphone-section-4.png    1x,
                 assets/images/iphone-section-4@2x.png 2x
@@ -545,11 +558,11 @@
       <div class="container">
         <div class="row flex-row-reverse p-lg-5 m-lg-5 align-items-center">
           <div class="col-lg-6">
-            <h1 class="section-heading mb-3">
+            <h1 data-aos="fade-left" class="section-heading mb-3">
               You are generating data 24/7 online, but you're not getting
               anything for it.
             </h1>
-            <p class="section-content pb-3">
+            <p data-aos="fade-left" class="section-content pb-3">
               Turn your personal data into rewards.
             </p>
             <div class="coming-soon d-lg-block d-none">COMING SOON</div>
@@ -580,6 +593,7 @@
           </div>
           <div class="col-lg-6 py-lg-5">
             <img
+              data-aos="fade-up"
               srcset="
                 assets/images/iPhone-12-pro.png    1x,
                 assets/images/iPhone-12-pro@2x.png 2x
@@ -844,5 +858,11 @@
       </section>
     </footer>
     <script src="assets/js/index.js"></script>
+    <script>
+      AOS.init({
+        throttleDelay: 200,
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>

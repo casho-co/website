@@ -570,6 +570,7 @@ footer {
   line-height: 34px;
 }
 .card-content {
+  margin-bottom: 46px;
   width: 302px;
   color: #000;
   font-size: 16px;
