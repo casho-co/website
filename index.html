@@ -30,7 +30,7 @@
                 >
               </li>
               <li>
-                <a class="navigation-link" href="team.html">About</a>
+                <a class="navigation-link" href="pages/team.html">About</a>
               </li>
               <li>
                 <a class="navigation-link" href="#how-it-works">How it works</a>
@@ -51,7 +51,7 @@
                 >
                   Resources
                   <img
-                    src="images/chevron-up.png"
+                    src="images/icons/chevron-up.png"
                     class="ms-2 mt-1"
                     style="width: 10px"
                     alt=""
@@ -70,71 +70,17 @@
 
           <div class="mobile-navigation-btn">
             <img
-              src="images/ic_round-menu.png"
+              src="images/icons/ic_round-menu.png"
               class="mobile-nav-icon menu"
               alt=""
             />
-            <img src="images/close.png" class="mobile-nav-icon close" alt="" />
+            <img
+              src="images/icons/close.png"
+              class="mobile-nav-icon close"
+              alt=""
+            />
           </div>
         </header>
-        <!-- <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid mx-md-3">
-            <a class="title" href="index.html">Casho</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon home"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-lg-0" style="column-gap: 25px">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="team.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">How it works</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Token</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">For business</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Resources
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item text-center" href="#"
-                        >White Paper</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav> -->
         <div class="p-lg-5 m-lg-5">
           <div class="row align-items-center w-100 m-0">
             <div class="col-lg-6">
@@ -145,14 +91,19 @@
                 The Next Generation of Data Ownership,<br />
                 powered by web3
               </p>
-              <div class="coming-soon d-lg-block d-none">COMING SOON</div>
-              <div class="gap-2 d-lg-flex justify-content-start d-none">
+              <div data-aos="fade-up" class="coming-soon d-lg-block d-none">
+                COMING SOON
+              </div>
+              <div
+                data-aos="fade-up"
+                class="gap-2 d-lg-flex justify-content-start d-none"
+              >
                 <div>
                   <a
                     ><img
                       srcset="
-                        images/app-store-badge.png    1x,
-                        images/app-store-badge@2x.png 2x
+                        images/logo/app-store-badge.png    1x,
+                        images/logo/app-store-badge@2x.png 2x
                       "
                       class="d-block mx-auto img-fluid cursor-pointer"
                       alt=""
@@ -162,8 +113,8 @@
                   <a
                     ><img
                       srcset="
-                        images/google-play-badge.png    1x,
-                        images/google-play-badge@2x.png 2x
+                        images/logo/google-play-badge.png    1x,
+                        images/logo/google-play-badge@2x.png 2x
                       "
                       class="d-block mx-auto img-fluid cursor-pointer"
                       alt=""
@@ -174,19 +125,25 @@
             <div class="col-lg-6">
               <img
                 data-aos="fade-up"
-                srcset="images/hero-image.png 1x, images/hero-image@2x.png 2x"
+                srcset="
+                  images/iphone/hero-image.png    1x,
+                  images/iphone/hero-image@2x.png 2x
+                "
                 class="d-block mx-auto img-fluid"
                 alt=""
               />
-              <div class="d-lg-none d-flex flex-column align-items-center mt-5">
+              <div
+                data-aos="fade-up"
+                class="d-lg-none d-flex flex-column align-items-center mt-5"
+              >
                 <div class="coming-soon">COMING SOON</div>
                 <div class="gap-2 justify-content-center d-flex">
                   <div>
                     <a
                       ><img
                         srcset="
-                          images/app-store-badge.png    1x,
-                          images/app-store-badge@2x.png 2x
+                          images/logo/app-store-badge.png    1x,
+                          images/logo/app-store-badge@2x.png 2x
                         "
                         class="d-block mx-auto img-fluid cursor-pointer"
                         alt=""
@@ -196,8 +153,8 @@
                     <a>
                       <img
                         srcset="
-                          images/google-play-badge.png    1x,
-                          images/google-play-badge@2x.png 2x
+                          images/logo/google-play-badge.png    1x,
+                          images/logo/google-play-badge@2x.png 2x
                         "
                         class="d-block mx-auto img-fluid cursor-pointer"
                         alt=""
@@ -224,15 +181,17 @@
                 link, the more opportunities you'll have to earn rewards
               </p>
               <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
-                <button class="learn-button">Join Casho</button>
+                <button data-aos="fade-up" class="learn-button">
+                  Join Casho
+                </button>
               </div>
             </div>
             <div class="col-lg-6">
               <img
                 data-aos="fade-up"
                 srcset="
-                  images/iphone-section-2.png    1x,
-                  images/iphone-section-2@2x.png 2x
+                  images/iphone/iphone-section-2.png    1x,
+                  images/iphone/iphone-section-2@2x.png 2x
                 "
                 class="d-block mx-auto img-fluid iphone-img"
                 alt=""
@@ -257,15 +216,17 @@
                 behaviours through the insightful analysis provided by Casho.
               </p>
               <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
-                <button class="learn-button">Join Casho</button>
+                <button data-aos="fade-up" class="learn-button">
+                  Join Casho
+                </button>
               </div>
             </div>
             <div class="col-lg-6">
               <img
                 data-aos="fade-up"
                 srcset="
-                  images/iphone-section-3.png    1x,
-                  images/iphone-section-3@2x.png 2x
+                  images/iphone/iphone-section-3.png    1x,
+                  images/iphone/iphone-section-3@2x.png 2x
                 "
                 class="d-block mx-auto img-fluid iphone-img"
                 alt=""
@@ -289,15 +250,17 @@
                 crypto
               </p>
               <div class="d-grid gap-2 d-lg-flex justify-content-lg-start">
-                <button class="learn-button">Join Casho</button>
+                <button data-aos="fade-up" class="learn-button">
+                  Join Casho
+                </button>
               </div>
             </div>
             <div class="col-lg-6">
               <img
                 data-aos="fade-up"
                 srcset="
-                  images/iphone-section-4.png    1x,
-                  images/iphone-section-4@2x.png 2x
+                  images/iphone/iphone-section-4.png    1x,
+                  images/iphone/iphone-section-4@2x.png 2x
                 "
                 class="d-block mx-auto img-fluid iphone-img"
                 alt=""
@@ -436,7 +399,7 @@
                 <ul>
                   <li>
                     <div class="item">
-                      <span><img src="images/point.png" alt="" /></span>
+                      <span><img src="images/icons/point.png" alt="" /></span>
                       <div class="content">
                         <h3 class="title">Spark <span>Q1 - Q2 2023</span></h3>
                         <p>Ideation, Research, Whitepaper</p>
@@ -445,7 +408,7 @@
                   </li>
                   <li>
                     <div class="item">
-                      <span><img src="images/point.png" alt="" /></span>
+                      <span><img src="images/icons/point.png" alt="" /></span>
                       <div class="content">
                         <h3 class="title">
                           Debut <span>Q4 2023 - Q1 2024</span>
@@ -459,7 +422,7 @@
                   </li>
                   <li>
                     <div class="item">
-                      <span><img src="images/point.png" alt="" /></span>
+                      <span><img src="images/icons/point.png" alt="" /></span>
                       <div class="content">
                         <h3 class="title">Craft <span>Q3 2023</span></h3>
                         <p>MVP, Beta Launch</p>
@@ -468,7 +431,7 @@
                   </li>
                   <li>
                     <div class="item">
-                      <span><img src="images/point.png" alt="" /></span>
+                      <span><img src="images/icons/point.png" alt="" /></span>
                       <div class="content">
                         <h3 class="title">
                           Surge <span>Q2 2024 onwards</span>
@@ -507,7 +470,7 @@
             <div class="slide d-flex align-items-center">
               Make money while you sleep<img
                 class="m-4"
-                srcset="images/star.png 1x, images/star@2x.png 2x"
+                srcset="images/icons/star.png 1x, images/icons/star@2x.png 2x"
                 height="55"
                 width="55"
                 alt=""
@@ -516,7 +479,7 @@
             <div class="slide d-flex align-items-center">
               Make money while you sleep<img
                 class="m-4"
-                srcset="images/star.png 1x, images/star@2x.png 2x"
+                srcset="images/icons/star.png 1x, images/icons/star@2x.png 2x"
                 height="55"
                 width="55"
                 alt=""
@@ -525,7 +488,7 @@
             <div class="slide d-flex align-items-center">
               Make money while you sleep<img
                 class="m-4"
-                srcset="images/star.png 1x, images/star@2x.png 2x"
+                srcset="images/icons/star.png 1x, images/icons/star@2x.png 2x"
                 height="55"
                 width="55"
                 alt=""
@@ -546,14 +509,19 @@
               <p data-aos="fade-up" class="section-content pb-3">
                 Turn your personal data into rewards.
               </p>
-              <div class="coming-soon d-lg-block d-none">COMING SOON</div>
-              <div class="gap-2 d-lg-flex justify-content-start d-none">
+              <div data-aos="fade-up" class="coming-soon d-lg-block d-none">
+                COMING SOON
+              </div>
+              <div
+                data-aos="fade-up"
+                class="gap-2 d-lg-flex justify-content-start d-none"
+              >
                 <div>
                   <a
                     ><img
                       srcset="
-                        images/google-play-badge.png    1x,
-                        images/google-play-badge@2x.png 2x
+                        images/logo/google-play-badge.png    1x,
+                        images/logo/google-play-badge@2x.png 2x
                       "
                       class="d-block mx-auto img-fluid cursor-pointer"
                       alt=""
@@ -563,8 +531,8 @@
                   <a
                     ><img
                       srcset="
-                        images/app-store-badge.png    1x,
-                        images/app-store-badge@2x.png 2x
+                        images/logo/app-store-badge.png    1x,
+                        images/logo/app-store-badge@2x.png 2x
                       "
                       class="d-block mx-auto img-fluid cursor-pointer"
                       alt=""
@@ -576,21 +544,24 @@
               <img
                 data-aos="fade-up"
                 srcset="
-                  images/iPhone-12-pro.png    1x,
-                  images/iPhone-12-pro@2x.png 2x
+                  images/iphone/iPhone-12-pro.png    1x,
+                  images/iphone/iPhone-12-pro@2x.png 2x
                 "
                 class="d-block mx-auto img-fluid iphone-img"
                 alt=""
               />
-              <div class="d-lg-none d-flex flex-column align-items-center my-5">
+              <div
+                data-aos="fade-up"
+                class="d-lg-none d-flex flex-column align-items-center my-5"
+              >
                 <div class="coming-soon">COMING SOON</div>
                 <div class="gap-2 justify-content-center d-flex">
                   <div>
                     <a
                       ><img
                         srcset="
-                          images/app-store-badge.png    1x,
-                          images/app-store-badge@2x.png 2x
+                          images/logo/app-store-badge.png    1x,
+                          images/logo/app-store-badge@2x.png 2x
                         "
                         class="d-block mx-auto img-fluid cursor-pointer"
                         alt=""
@@ -600,8 +571,8 @@
                     <a
                       ><img
                         srcset="
-                          images/google-play-badge.png    1x,
-                          images/google-play-badge@2x.png 2x
+                          images/logo/google-play-badge.png    1x,
+                          images/logo/google-play-badge@2x.png 2x
                         "
                         class="d-block mx-auto img-fluid cursor-pointer"
                         alt=""
@@ -631,40 +602,40 @@
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_twitter.png    1x,
-                    images/logos_twitter@2x.png 2x
+                    images/logo/logos_twitter.png    1x,
+                    images/logo/logos_twitter@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_telegram.png    1x,
-                    images/logos_telegram@2x.png 2x
+                    images/logo/logos_telegram.png    1x,
+                    images/logo/logos_telegram@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_linkedin.png    1x,
-                    images/logos_linkedin@2x.png 2x
+                    images/logo/logos_linkedin.png    1x,
+                    images/logo/logos_linkedin@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_youtube.png    1x,
-                    images/logos_youtube@2x.png 2x
+                    images/logo/logos_youtube.png    1x,
+                    images/logo/logos_youtube@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_Medium.png    1x,
-                    images/logos_Medium@2x.png 2x
+                    images/logo/logos_Medium.png    1x,
+                    images/logo/logos_Medium@2x.png 2x
                   "
                   alt=""
                 />
@@ -682,7 +653,7 @@
                 <a href="#!" class="sub-title">Whitepaper</a>
               </p>
               <p>
-                <a href="index.html" class="sub-title">About</a>
+                <a href="pages/team.html" class="sub-title">About</a>
               </p>
             </div>
             <div class="col-lg-3 mx-auto mb-4">
@@ -707,8 +678,8 @@
                   ><img
                     class="mb-2 d-block mx-auto img-fluid cursor-pointer"
                     srcset="
-                      images/app-store-badge.png    1x,
-                      images/app-store-badge@2x.png 2x
+                      images/logo/app-store-badge.png    1x,
+                      images/logo/app-store-badge@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -716,8 +687,8 @@
                   ><img
                     class="d-block mx-auto img-fluid cursor-pointer"
                     srcset="
-                      images/google-play-badge.png    1x,
-                      images/google-play-badge@2x.png 2x
+                      images/logo/google-play-badge.png    1x,
+                      images/logo/google-play-badge@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -747,7 +718,7 @@
                   <a href="#!" class="sub-title">Whitepaper</a>
                 </p>
                 <p>
-                  <a href="index.html" class="sub-title">About</a>
+                  <a href="pages/team.html" class="sub-title">About</a>
                 </p>
               </div>
               <div class="col">
@@ -775,40 +746,40 @@
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_twitter.png    1x,
-                    images/logos_twitter@2x.png 2x
+                    images/logo/logos_twitter.png    1x,
+                    images/logo/logos_twitter@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_telegram.png    1x,
-                    images/logos_telegram@2x.png 2x
+                    images/logo/logos_telegram.png    1x,
+                    images/logo/logos_telegram@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_linkedin.png    1x,
-                    images/logos_linkedin@2x.png 2x
+                    images/logo/logos_linkedin.png    1x,
+                    images/logo/logos_linkedin@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_youtube.png    1x,
-                    images/logos_youtube@2x.png 2x
+                    images/logo/logos_youtube.png    1x,
+                    images/logo/logos_youtube@2x.png 2x
                   "
                   alt=""
                 />
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logos_Medium.png    1x,
-                    images/logos_Medium@2x.png 2x
+                    images/logo/logos_Medium.png    1x,
+                    images/logo/logos_Medium@2x.png 2x
                   "
                   alt=""
                 />
@@ -820,8 +791,8 @@
                 ><img
                   class="img-fluid cursor-pointer"
                   srcset="
-                    images/app-store-badge.png    1x,
-                    images/app-store-badge@2x.png 2x
+                    images/logo/app-store-badge.png    1x,
+                    images/logo/app-store-badge@2x.png 2x
                   "
                   alt=""
               /></a>
@@ -829,8 +800,8 @@
                 ><img
                   class="img-fluid cursor-pointer ms-2"
                   srcset="
-                    images/google-play-badge.png    1x,
-                    images/google-play-badge@2x.png 2x
+                    images/logo/google-play-badge.png    1x,
+                    images/logo/google-play-badge@2x.png 2x
                   "
                   alt=""
               /></a>
