@@ -177,6 +177,7 @@ footer {
   }
 
   .active .navigation {
+    z-index: 99;
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
