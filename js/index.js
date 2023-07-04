@@ -42,28 +42,51 @@ const textLines = [
 
 const typingSpeed = 100;
 const textContainer = document.getElementById("text-container");
-function typeText(index) {
-  if (index >= textLines.length) {
+let typewriterStarted = false;
+
+function startTypewriter() {
+  if (typewriterStarted) {
     return;
   }
 
-  const line = textLines[index];
-  const { text, color } = line;
-  const lineElement = document.createElement("span");
-  lineElement.style.color = color;
-  textContainer.appendChild(lineElement);
-  var br = document.createElement("br");
-  if (index == 0) textContainer.appendChild(br);
-  let charIndex = 0;
-  const typeInterval = setInterval(() => {
-    if (charIndex < text.length) {
-      lineElement.textContent += text.charAt(charIndex);
-      charIndex++;
-    } else {
-      clearInterval(typeInterval);
-      typeText(index + 1);
+  typewriterStarted = true;
+
+  function typeText(index) {
+    if (index >= textLines.length) {
+      return;
     }
-  }, typingSpeed);
+
+    const line = textLines[index];
+    const { text, color } = line;
+    const lineElement = document.createElement("span");
+    lineElement.style.color = color;
+    textContainer.appendChild(lineElement);
+    var br = document.createElement("br");
+    if (index == 0) textContainer.appendChild(br);
+    let charIndex = 0;
+    const typeInterval = setInterval(() => {
+      if (charIndex < text.length) {
+        lineElement.textContent += text.charAt(charIndex);
+        charIndex++;
+      } else {
+        clearInterval(typeInterval);
+        typeText(index + 1);
+      }
+    }, typingSpeed);
+  }
+
+  typeText(0);
 }
 
-typeText(0);
+function checkSectionVisibility() {
+  const sectionRect = textContainer.getBoundingClientRect();
+  const isSectionVisible =
+    sectionRect.top < window.innerHeight && sectionRect.bottom >= 0;
+
+  if (isSectionVisible) {
+    startTypewriter();
+    window.removeEventListener("scroll", checkSectionVisibility);
+  }
+}
+
+window.addEventListener("scroll", checkSectionVisibility);
