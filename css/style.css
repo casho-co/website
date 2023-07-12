@@ -288,12 +288,17 @@ footer {
     font-size: 16px !important;
   }
 
+  .token-bg {
+    background: #fff !important;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+
   .background-gradient-mobile {
-    margin-top: 100px;
-    background: rgb(255, 255, 255);
+    margin-top: 90px;
     background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 70%,
       rgba(106, 56, 253, 0.31985294117647056) 100%
     );
   }
@@ -486,6 +491,11 @@ footer {
   color: #6a38fd;
 }
 
+.token-bg {
+  background: #fafafa;
+  padding-bottom: 50px;
+}
+
 .token-section-heading {
   font-weight: 600;
   font-size: 82px;
@@ -615,3 +625,30 @@ footer {
   height: 100%;
   transition: transform 0.2s;
 } */
+
+.token-heading {
+  color: #000;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.token-sub-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.token-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.token-card {
+  margin-bottom: 12px;
+  padding: 32px;
+  padding-top: 106px;
+  border-radius: 8px;
+  background: rgb(234, 234, 243, 0.30000001192092896);
+}
