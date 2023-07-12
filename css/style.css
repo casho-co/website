@@ -279,6 +279,10 @@ footer {
     line-height: 45px !important;
   }
 
+  .animated-header.earn > :first-child {
+    flex-basis: 100%;
+  }
+
   .token-subtitle {
     font-size: 12px !important;
     line-height: 24px !important;
@@ -294,6 +298,11 @@ footer {
     padding-bottom: 70px;
   }
 
+  .background-gradient {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .background-gradient-mobile {
     margin-top: 90px;
     background: linear-gradient(
@@ -301,6 +310,17 @@ footer {
       rgba(255, 255, 255, 1) 70%,
       rgba(106, 56, 253, 0.31985294117647056) 100%
     );
+  }
+
+  .shopping-section-heading {
+    font-size: 3.2rem !important;
+    line-height: 43px !important;
+  }
+
+  .shopping-section-sub-heading {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 28px !important;
   }
 
   .timeline ul li {
@@ -651,4 +671,104 @@ footer {
   padding-top: 106px;
   border-radius: 8px;
   background: rgb(234, 234, 243, 0.30000001192092896);
+}
+
+.shopping-section-heading {
+  font-size: 6.4rem;
+  font-weight: 800;
+  line-height: 100px;
+}
+
+.shopping-section-sub-heading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #737373;
+}
+
+.animated-header.earn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@keyframes width-steps {
+  1.6666666667%,
+  15% {
+    width: 0.15625em;
+  }
+  18.3333333333%,
+  31.6666666667% {
+    width: 5.046875em;
+  }
+  35%,
+  48.3333333333% {
+    width: 3.953125em;
+  }
+  51.6666666667%,
+  65% {
+    width: 4.265625em;
+  }
+  68.3333333333%,
+  81.6666666667% {
+    width: 4.90625em;
+  }
+  85%,
+  98.3333333333% {
+    width: 2.6875em;
+  }
+}
+@keyframes opacity-steps {
+  0%,
+  16.6666666667% {
+    opacity: 0;
+  }
+  1.6666666667%,
+  15% {
+    opacity: 1;
+  }
+}
+
+.animated-header.earn .source {
+  display: inline-grid;
+  grid-template: 1fr/1fr;
+  overflow: hidden;
+  justify-items: center;
+  justify-content: center;
+  width: 0.3125em;
+  animation: width-steps 14s ease-in-out infinite;
+}
+.animated-header.earn .source > span {
+  grid-area: 1/1;
+  opacity: 0;
+  animation: opacity-steps 14s ease-in-out infinite;
+}
+.animated-header.earn .source > span.shopping {
+  animation-delay: 2.3333333333s;
+}
+.animated-header.earn .source > span.google {
+  animation-delay: 4.6666666667s;
+}
+.animated-header.earn .source > span.google .blue {
+  color: #4285f4;
+}
+.animated-header.earn .source > span.google .red {
+  color: #db4437;
+}
+.animated-header.earn .source > span.google .yellow {
+  color: #f4b400;
+}
+.animated-header.earn .source > span.google .green {
+  color: #0f9d58;
+}
+.animated-header.earn .source > span.amazon {
+  color: #000;
+  animation-delay: 7s;
+}
+.animated-header.earn .source > span.browsing {
+  color: #000;
+  animation-delay: 9.3333333333s;
+}
+.animated-header.earn .source > span.uber {
+  color: #000;
+  animation-delay: 11.6666666667s;
 }
