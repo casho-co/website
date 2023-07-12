@@ -7,6 +7,14 @@ const toggleNavbar = () => {
 
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
+var maxHeight = 0;
+jQuery(".token-section")
+  .find(".token-card")
+  .each(function (index) {
+    if (jQuery(this).height() > maxHeight) maxHeight = jQuery(this).height();
+  });
+jQuery(".token-section").find(".token-card").height(maxHeight);
+
 jQuery(".navigation-link").on("mouseenter mouseleave", function () {
   jQuery(this).parent().siblings(".current").toggleClass("active");
 });
