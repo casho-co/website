@@ -294,7 +294,6 @@ footer {
 
   .token-bg {
     background: #fff !important;
-    text-align: center;
     padding-bottom: 70px;
   }
 
@@ -738,6 +737,7 @@ footer {
   animation: width-steps 14s ease-in-out infinite;
 }
 .animated-header.earn .source > span {
+  color: #6c4efe;
   grid-area: 1/1;
   opacity: 0;
   animation: opacity-steps 14s ease-in-out infinite;
@@ -761,14 +761,11 @@ footer {
   color: #0f9d58;
 }
 .animated-header.earn .source > span.amazon {
-  color: #000;
   animation-delay: 7s;
 }
 .animated-header.earn .source > span.browsing {
-  color: #000;
   animation-delay: 9.3333333333s;
 }
 .animated-header.earn .source > span.uber {
-  color: #000;
   animation-delay: 11.6666666667s;
 }
