@@ -186,7 +186,7 @@ footer {
 
   .active .mobile-navigation-btn .mobile-nav-icon.close {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 38px;
     right: 16px;
   }
