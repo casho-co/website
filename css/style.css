@@ -108,6 +108,12 @@ footer {
   color: #212529;
 }
 
+.utility-icon {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 30px;
+}
+
 .platform-img {
   display: flex;
   align-items: center;
@@ -133,6 +139,17 @@ footer {
     z-index: 999;
   }
 
+  .platform-container > div:first-child,
+  .platform-container > div:last-child {
+    visibility: hidden;
+  }
+
+  .platform-img {
+    min-height: 55px;
+    min-width: 98px;
+    border-radius: 13px;
+  }
+
   .header,
   .padding-0 {
     padding: 0 !important;
@@ -146,6 +163,18 @@ footer {
   .header .title {
     font-size: 20px;
     font-weight: 700;
+  }
+
+  .join-team-btn {
+    border-radius: 12px !important;
+    font-size: 20px !important;
+    line-height: 10px !important;
+    padding: 18px 26px !important;
+  }
+
+  .hiring-title {
+    font-size: 32px !important;
+    line-height: 30px !important;
   }
 
   .navigation {
@@ -332,9 +361,9 @@ footer {
   .background-gradient-mobile {
     margin-top: 90px;
     background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 70%,
-      rgba(106, 56, 253, 0.31985294117647056) 100%
+      180deg,
+      rgba(64, 117, 255, 0.76) 0%,
+      rgba(172, 220, 211, 0) 60%
     );
   }
 
@@ -427,6 +456,16 @@ footer {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.tokenomics-bg {
+  border-radius: 16px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    180deg,
+    rgba(64, 117, 255, 0.76) 0%,
+    rgba(172, 220, 211, 0) 40%
+  );
 }
 
 .roadmap-image {
@@ -641,6 +680,7 @@ footer {
   font-size: 54px;
   font-weight: 700;
   line-height: 76px;
+  max-width: 940px;
 }
 
 .teams-content {
@@ -660,6 +700,7 @@ footer {
   line-height: 34px;
 }
 .card-content {
+  min-height: 50px;
   margin-bottom: 46px;
   width: 302px;
   color: #000;
@@ -679,6 +720,17 @@ footer {
   line-height: 27px;
 }
 
+.join-team-btn {
+  border-radius: 18px;
+  background: #000;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 33px 61px 38px 66px;
+  border-style: none;
+}
+
 .disable-on-hover:hover {
   opacity: 0.5;
   filter: grayscale(1);
@@ -687,20 +739,6 @@ footer {
 #text-container {
   height: 310px;
 }
-
-/* #container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%; 
-  overflow: hidden;
-}
-
-#image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.2s;
-} */
 
 .token-heading {
   color: #000;
@@ -715,6 +753,15 @@ footer {
   line-height: 36px;
 }
 
+.hiring-title > span {
+  color: #6a38fd;
+}
+.hiring-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
 .token-content {
   font-size: 16px;
   font-weight: 400;
@@ -724,7 +771,6 @@ footer {
 .token-card {
   margin-bottom: 12px;
   padding: 32px;
-  padding-top: 106px;
   border-radius: 8px;
   background: rgb(234, 234, 243, 0.30000001192092896);
 }
