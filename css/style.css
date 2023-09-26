@@ -720,6 +720,22 @@ footer {
   line-height: 27px;
 }
 
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 4s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 .join-team-btn {
   border-radius: 18px;
   background: #000;
@@ -729,6 +745,7 @@ footer {
   line-height: 20px;
   padding: 33px 61px 38px 66px;
   border-style: none;
+  text-decoration: none;
 }
 
 .disable-on-hover:hover {
