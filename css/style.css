@@ -74,7 +74,7 @@ footer {
 .dropdown-toggle {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .dropdown-toggle::after {
   display: none !important;
@@ -94,6 +94,17 @@ footer {
 .dropdown-item:hover,
 .dropdown-item:active {
   color: #6c4efe !important;
+}
+
+.download-btn {
+  text-decoration: none;
+  padding: 13px;
+  color: #6c4efe;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #6c4efe;
+  background: #fff;
 }
 
 .mobile-navigation-btn {
@@ -125,6 +136,24 @@ footer {
   box-shadow: 0px 4px 4px 10px rgba(228, 228, 228, 0.25);
 }
 
+.business-title {
+  color: #6c4efe;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 82px;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.business-content {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 837px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mobile-nav-icon.close {
   display: none;
 }
@@ -141,7 +170,7 @@ footer {
 
   .platform-container > div:first-child,
   .platform-container > div:last-child {
-    visibility: hidden;
+    display: none !important;
   }
 
   .platform-img {
@@ -178,7 +207,8 @@ footer {
   }
 
   .navigation {
-    width: 60%;
+    text-align: center;
+    width: 100%;
     height: 100vh;
     background: #fff;
     position: fixed;
@@ -195,7 +225,7 @@ footer {
     padding: 0 16px;
     position: relative;
     top: 17%;
-    gap: 26px;
+    gap: 49px;
     flex-direction: column;
   }
 
@@ -222,6 +252,11 @@ footer {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+  }
+
+  .navigation-list .active a.navigation-link {
+    text-decoration: none;
+    color: #6c4efe;
   }
 
   .active .mobile-navigation-btn .mobile-nav-icon.close {
@@ -349,6 +384,54 @@ footer {
     line-height: 32px !important;
   }
 
+  .business-title {
+    font-size: 32px !important;
+    line-height: 37px !important;
+  }
+
+  .first-business-section {
+    padding: 0 30px !important;
+  }
+
+  .business-content {
+    font-size: 14px !important;
+  }
+
+  #faq {
+    padding: 30px !important;
+  }
+
+  .business-sub-title {
+    font-size: 16px !important;
+    line-height: 34px !important;
+  }
+
+  .faq-heading {
+    padding-bottom: 40px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+  }
+
+  .faq-title {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+  }
+  .faq-title > img {
+    height: 9px;
+    width: 15px;
+  }
+
+  .faq-content {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    padding-top: 6px !important;
+  }
+
   .ai-agent-content {
     font-size: 14px !important;
   }
@@ -365,6 +448,15 @@ footer {
       rgba(64, 117, 255, 0.76) 0%,
       rgba(172, 220, 211, 0) 60%
     );
+  }
+
+  .data-card {
+    margin-bottom: 60px !important;
+  }
+
+  .data-item {
+    font-size: 18px !important;
+    font-weight: 500 !important;
   }
 
   .shopping-section-heading {
@@ -416,6 +508,30 @@ footer {
     top: -20px;
   }
 
+  .data-title {
+    justify-content: center !important;
+    font-size: 20px !important;
+    line-height: 23px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .book-demo-btn {
+    font-size: 14px !important;
+    line-height: 26px !important;
+    margin-top: 0 !important;
+    padding: 14px 68px !important;
+  }
+
+  .business-brand-title {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+
+  .data-section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
   .timeline .content > p {
     border-radius: 10px;
     background: #6c4efe;
@@ -425,6 +541,11 @@ footer {
     width: 243px;
     padding: 10px;
   }
+}
+
+.data-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .coming-soon {
@@ -444,6 +565,26 @@ footer {
 .header-section {
   position: relative;
 }
+
+.business-sub-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+.openings-btn {
+  border-radius: 38px;
+  background: #6c4efe;
+  padding: 11px 33px 12px 29px;
+  border-style: none;
+  color: #fff;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
 .gradient-bg {
   position: relative;
   background-repeat: no-repeat;
@@ -535,6 +676,11 @@ footer {
   font-size: 24px;
   line-height: 34px;
   color: #000000;
+}
+
+.first-business-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .learn-button {
@@ -693,6 +839,58 @@ footer {
   line-height: 34px;
 }
 
+.book-demo-btn {
+  border-radius: 10px;
+  background: #6c4efe;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 34px 96px;
+  border-style: none;
+  color: #fff;
+  margin-top: 200px;
+}
+
+.business-brand-title {
+  color: #6c4efe;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.data-container {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.data-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41.5px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.data-card {
+  list-style: none;
+  color: #fff;
+  padding: 46px;
+  border-radius: 19px;
+  background: linear-gradient(
+    150deg,
+    #10567d 3.15%,
+    #1b377e 52.38%,
+    #0a3f5c 84.9%
+  );
+}
+
+.data-item {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 170%;
+}
+
 .card-title {
   color: #000;
   font-size: 20px;
@@ -762,6 +960,47 @@ footer {
   font-size: 32px;
   font-weight: 800;
   line-height: 40px;
+}
+
+#faq {
+  padding-left: 120px;
+  padding-right: 120px;
+  color: #fff;
+  background-color: #23252e;
+}
+
+.faq-item.active .faq-content {
+  display: block !important;
+}
+
+.faq-item.active .faq-title > img {
+  transform: rotate(180deg);
+}
+
+.faq-heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  padding-bottom: 80px;
+}
+
+.faq-title {
+  border-top: 1px solid #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.faq-content {
+  display: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .token-sub-heading {

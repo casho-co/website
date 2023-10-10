@@ -68,7 +68,7 @@
   </head>
   <body>
     <main>
-      <section class="gradient-bg">
+      <section class="gradient-bg" style="padding-bottom: 80px">
         <header class="header">
           <a class="title" href="/"
             ><img
@@ -96,7 +96,7 @@
                 <a class="navigation-link" href="business.html">For business</a>
               </li>
               <li>
-                <a class="navigation-link" href="#faq">FAQ</a>
+                <a class="navigation-link" href="index.html#faq">FAQ</a>
               </li>
               <li>
                 <a
@@ -125,6 +125,18 @@
                   </li>
                 </ul>
               </li>
+              <li class="d-lg-none m-5">
+                <a href="index.html#download" class="download-btn">
+                  Download Casho now
+                  <img
+                    srcset="
+                      images/icons/download.png    1x,
+                      images/icons/download@2x.png 2x
+                    "
+                    alt=""
+                  />
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -135,98 +147,97 @@
               alt=""
             />
             <img
-              src="images/icons/close.png"
+              srcset="images/icons/close.png 1x, images/icons/close@2x.png 2x"
               class="mobile-nav-icon close"
               alt=""
             />
           </div>
         </header>
-        <div class="p-lg-5 m-lg-5">
-          <div class="row align-items-center w-100 m-0">
-            <div class="col-lg-6">
-              <h1 data-aos="fade-up" class="hero-title mb-3">
-                Unlock the power of your data
-              </h1>
-              <p data-aos="fade-up" class="hero-sub-title mb-5 pb-3">
-                Download the Casho app to learn insights and earn real money
-                from your data
-              </p>
-              <div data-aos="fade-up" class="coming-soon d-lg-block d-none">
-                COMING SOON
-              </div>
-              <div
-                data-aos="fade-up"
-                class="gap-2 d-lg-flex justify-content-start d-none"
-              >
-                <div>
-                  <a
-                    ><img
-                      srcset="
-                        images/logo/app-store-badge.png    1x,
-                        images/logo/app-store-badge@2x.png 2x
-                      "
-                      class="d-block mx-auto img-fluid cursor-pointer disable-on-hover"
-                      alt=""
-                  /></a>
-                </div>
-                <div>
-                  <a
-                    ><img
-                      srcset="
-                        images/logo/google-play-badge.png    1x,
-                        images/logo/google-play-badge@2x.png 2x
-                      "
-                      class="d-block mx-auto img-fluid cursor-pointer disable-on-hover"
-                      alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div id="container">
-                <img
-                  id="image"
-                  data-aos="fade-up"
-                  srcset="
-                    images/iphone/hero-image.png    1x,
-                    images/iphone/hero-image@2x.png 2x
-                  "
-                  class="d-block mx-auto img-fluid"
-                  alt=""
-                />
-              </div>
-              <div
-                data-aos="fade-up"
-                class="d-lg-none d-flex flex-column align-items-center mt-5"
-              >
-                <div class="coming-soon">COMING SOON</div>
-                <div class="gap-2 justify-content-center d-flex">
-                  <div>
-                    <a
-                      ><img
-                        srcset="
-                          images/logo/app-store-badge.png    1x,
-                          images/logo/app-store-badge@2x.png 2x
-                        "
-                        class="d-block mx-auto img-fluid cursor-pointer disable-on-hover"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div>
-                    <a>
-                      <img
-                        srcset="
-                          images/logo/google-play-badge.png    1x,
-                          images/logo/google-play-badge@2x.png 2x
-                        "
-                        class="d-block mx-auto img-fluid cursor-pointer disable-on-hover"
-                        alt=""
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="container text-center first-business-section">
+          <h1 class="my-5 business-title">
+            Get high-quality consumer data to power your business
+          </h1>
+          <p class="business-content">
+            Casho provides businesses with access to a large and diverse pool of
+            ethical data, collected from users who have opted-in to share their
+            data.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="text-center mb-5 business-sub-title">
+          Tap into zero-party data with Casho
+        </h3>
+        <img
+          class="d-lg-block d-none mx-auto img-fluid"
+          srcset="images/business-image.png 1x, images/business-image@2x.png 2x"
+          alt=""
+        />
+        <img
+          class="d-lg-none d-block mx-auto img-fluid"
+          srcset="
+            images/business-image-mobile.png    1x,
+            images/business-image-mobile@2x.png 2x
+          "
+          alt=""
+        />
+      </section>
+
+      <section class="px-lg-5 mx-lg-5 data-section">
+        <h3 class="text-center business-brand-title">What do we cover?</h3>
+        <div
+          class="d-flex flex-column flex-lg-row"
+          style="padding-top: 50px; padding-bottom: 50px; column-gap: 30px"
+        >
+          <div class="data-container">
+            <h4 class="data-title">Purchasing transaction data</h4>
+            <ul class="data-card">
+              <li class="data-item">Amazon</li>
+              <li class="data-item">Flipkart</li>
+              <li class="data-item">Myntra</li>
+              <li class="data-item">Apple store</li>
+              <li class="data-item">Google Play store</li>
+              <li class="data-item">Bank transactions</li>
+              <li class="data-item">Ajio</li>
+              <li class="data-item">Nykaa & more</li>
+            </ul>
           </div>
+          <div class="data-container">
+            <h4 class="data-title">Ride hailing data & Food delivery</h4>
+            <ul class="data-card">
+              <li class="data-item">Uber</li>
+              <li class="data-item">Ola</li>
+              <li class="data-item">Swiggy</li>
+              <li class="data-item">Zomato</li>
+              <li class="data-item">Bigbasket</li>
+              <li class="data-item">Bank transactions</li>
+              <li class="data-item">Amazon</li>
+              <li class="data-item">fresh & more</li>
+            </ul>
+          </div>
+          <div class="data-container">
+            <h4 class="data-title">Streaming viewership data</h4>
+            <ul class="data-card">
+              <li class="data-item">Amazon prime</li>
+              <li class="data-item">Netflix</li>
+              <li class="data-item">Youtube</li>
+              <li class="data-item">Hotstar & more</li>
+            </ul>
+          </div>
+          <div class="data-container">
+            <h4 class="data-title">Others</h4>
+            <ul class="data-card">
+              <li class="data-item">App usage data</li>
+              <li class="data-item">Location data</li>
+              <li class="data-item">Device data</li>
+              <li class="data-item">Search history</li>
+              <li class="data-item">& more</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="book-demo-btn">Book demo</button>
         </div>
       </section>
     </main>
@@ -330,7 +341,7 @@
                 <a href="team.html" class="sub-title">About</a>
               </p>
               <p>
-                <a href="#faq" class="sub-title">FAQ</a>
+                <a href="index.html#faq" class="sub-title">FAQ</a>
               </p>
             </div>
             <div class="col-lg-2 mx-auto mb-4">
@@ -358,7 +369,7 @@
             <div class="col-lg-3 mx-auto mb-lg-0 mb-4">
               <h6 class="footer-title mb-4">Download now</h6>
               <div class="d-flex flex-column align-items-start">
-                <a href="#download"
+                <a href="index.html#download"
                   ><img
                     class="mb-2 d-block mx-auto img-fluid cursor-pointer"
                     srcset="
@@ -367,7 +378,7 @@
                     "
                     alt=""
                 /></a>
-                <a href="#download"
+                <a href="index.html#download"
                   ><img
                     class="d-block mx-auto img-fluid cursor-pointer"
                     srcset="
@@ -420,7 +431,7 @@
                   <a href="team.html" class="sub-title">About</a>
                 </p>
                 <p>
-                  <a href="#faq" class="sub-title">FAQ</a>
+                  <a href="index.html#faq" class="sub-title">FAQ</a>
                 </p>
               </div>
               <div class="col p-0">
@@ -450,7 +461,7 @@
             </div>
             <div class="mb-4 padding-0">
               <h6 class="footer-title mb-4">Download now</h6>
-              <a href="#download"
+              <a href="index.html#download"
                 ><img
                   class="img-fluid cursor-pointer"
                   srcset="
@@ -459,7 +470,7 @@
                   "
                   alt=""
               /></a>
-              <a href="#download"
+              <a href="index.html#download"
                 ><img
                   class="img-fluid cursor-pointer ms-2"
                   srcset="
