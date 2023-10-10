@@ -573,6 +573,8 @@ footer {
 }
 
 .openings-btn {
+  display: inline-block;
+  text-decoration: none;
   border-radius: 38px;
   background: #6c4efe;
   padding: 11px 33px 12px 29px;
