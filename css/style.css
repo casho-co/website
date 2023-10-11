@@ -108,6 +108,23 @@ footer {
   color: #212529;
 }
 
+.utility-icon {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 30px;
+}
+
+.platform-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 122px;
+  min-width: 217px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 10px rgba(228, 228, 228, 0.25);
+}
+
 .mobile-nav-icon.close {
   display: none;
 }
@@ -120,6 +137,17 @@ footer {
     display: block;
     color: #212529;
     z-index: 999;
+  }
+
+  .platform-container > div:first-child,
+  .platform-container > div:last-child {
+    visibility: hidden;
+  }
+
+  .platform-img {
+    min-height: 55px;
+    min-width: 98px;
+    border-radius: 13px;
   }
 
   .header,
@@ -135,6 +163,18 @@ footer {
   .header .title {
     font-size: 20px;
     font-weight: 700;
+  }
+
+  .join-team-btn {
+    border-radius: 12px !important;
+    font-size: 20px !important;
+    line-height: 10px !important;
+    padding: 18px 26px !important;
+  }
+
+  .hiring-title {
+    font-size: 32px !important;
+    line-height: 30px !important;
   }
 
   .navigation {
@@ -297,6 +337,22 @@ footer {
     padding-bottom: 70px;
   }
 
+  .ai-background {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .ai-agent-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .ai-agent-content {
+    font-size: 14px !important;
+  }
+
   .background-gradient {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -305,9 +361,9 @@ footer {
   .background-gradient-mobile {
     margin-top: 90px;
     background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 70%,
-      rgba(106, 56, 253, 0.31985294117647056) 100%
+      180deg,
+      rgba(64, 117, 255, 0.76) 0%,
+      rgba(172, 220, 211, 0) 60%
     );
   }
 
@@ -402,6 +458,16 @@ footer {
   cursor: pointer;
 }
 
+.tokenomics-bg {
+  border-radius: 16px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    180deg,
+    rgba(64, 117, 255, 0.76) 0%,
+    rgba(172, 220, 211, 0) 40%
+  );
+}
+
 .roadmap-image {
   right: 5%;
   width: 90% !important;
@@ -457,12 +523,14 @@ footer {
 }
 
 .hero-title {
+  max-width: 536px;
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
   color: #000000;
 }
 .hero-sub-title {
+  max-width: 480px;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
@@ -490,6 +558,35 @@ footer {
 .brand-bg .learn-button {
   background: #ffffff;
   color: #6c4efe;
+}
+
+.ai-background {
+  background: linear-gradient(
+    186deg,
+    rgba(223, 214, 255, 0.53) 9.3%,
+    rgba(232, 225, 254, 0.72) 42.75%,
+    rgba(238, 233, 253, 0.52) 65.53%,
+    rgba(178, 166, 216, 0) 171.19%
+  );
+}
+
+.ai-agent-title {
+  background: linear-gradient(309deg, #6c4efe 21.17%, #1fd9f2 91.79%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.ai-agent-content {
+  color: #000;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section-heading {
@@ -542,11 +639,10 @@ footer {
 }
 
 .background-gradient {
-  background: rgb(255, 255, 255);
   background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(106, 56, 253, 0.31985294117647056) 100%
+    180deg,
+    rgba(64, 117, 255, 0.76) 0%,
+    rgba(172, 220, 211, 0) 100%
   );
 }
 
@@ -584,6 +680,7 @@ footer {
   font-size: 54px;
   font-weight: 700;
   line-height: 76px;
+  max-width: 940px;
 }
 
 .teams-content {
@@ -603,6 +700,7 @@ footer {
   line-height: 34px;
 }
 .card-content {
+  min-height: 50px;
   margin-bottom: 46px;
   width: 302px;
   color: #000;
@@ -622,6 +720,34 @@ footer {
   line-height: 27px;
 }
 
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 4s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.join-team-btn {
+  border-radius: 18px;
+  background: #000;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 33px 61px 38px 66px;
+  border-style: none;
+  text-decoration: none;
+}
+
 .disable-on-hover:hover {
   opacity: 0.5;
   filter: grayscale(1);
@@ -630,20 +756,6 @@ footer {
 #text-container {
   height: 310px;
 }
-
-/* #container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%; 
-  overflow: hidden;
-}
-
-#image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.2s;
-} */
 
 .token-heading {
   color: #000;
@@ -658,6 +770,15 @@ footer {
   line-height: 36px;
 }
 
+.hiring-title > span {
+  color: #6a38fd;
+}
+.hiring-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 55px;
+}
+
 .token-content {
   font-size: 16px;
   font-weight: 400;
@@ -667,7 +788,6 @@ footer {
 .token-card {
   margin-bottom: 12px;
   padding: 32px;
-  padding-top: 106px;
   border-radius: 8px;
   background: rgb(234, 234, 243, 0.30000001192092896);
 }
@@ -682,7 +802,7 @@ footer {
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
-  color: #737373;
+  color: #171717;
 }
 
 .animated-header.earn {
@@ -737,7 +857,7 @@ footer {
   animation: width-steps 14s ease-in-out infinite;
 }
 .animated-header.earn .source > span {
-  color: #6c4efe;
+  color: #fff;
   grid-area: 1/1;
   opacity: 0;
   animation: opacity-steps 14s ease-in-out infinite;
@@ -747,18 +867,6 @@ footer {
 }
 .animated-header.earn .source > span.google {
   animation-delay: 4.6666666667s;
-}
-.animated-header.earn .source > span.google .blue {
-  color: #4285f4;
-}
-.animated-header.earn .source > span.google .red {
-  color: #db4437;
-}
-.animated-header.earn .source > span.google .yellow {
-  color: #f4b400;
-}
-.animated-header.earn .source > span.google .green {
-  color: #0f9d58;
 }
 .animated-header.earn .source > span.amazon {
   animation-delay: 7s;
