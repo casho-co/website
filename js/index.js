@@ -21,6 +21,30 @@ jQuery(".token-section")
   });
 jQuery(".token-section").find(".token-card").height(maxHeight);
 
+if (jQuery(document).width() > 991) {
+  var maxHeight = 0;
+  jQuery(".data-section")
+    .find(".data-card")
+    .each(function (index) {
+      if (jQuery(this).height() > maxHeight) maxHeight = jQuery(this).height();
+    });
+  jQuery(".data-section").find(".data-card").height(maxHeight);
+
+  var maxHeight = 0;
+  jQuery(".data-section")
+    .find(".data-title")
+    .each(function (index) {
+      if (jQuery(this).height() > maxHeight) maxHeight = jQuery(this).height();
+    });
+  jQuery(".data-section").find(".data-title").height(maxHeight);
+}
+
 jQuery(".navigation-link").on("mouseenter mouseleave", function () {
   jQuery(this).parent().siblings(".current").toggleClass("active");
+});
+
+jQuery(".faq-item").on("click", function () {
+  if (!jQuery(this).hasClass("active"))
+    jQuery(this).addClass("active").siblings().removeClass("active");
+  else jQuery(this).removeClass("active");
 });

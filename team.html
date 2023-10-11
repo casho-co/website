@@ -67,14 +67,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <section class="header-section">
+    <section class="gradient-bg" style="padding-bottom: 80px">
       <header class="header">
         <a class="title" href="/"
           ><img
-            style="width: 105px"
             srcset="
-              images/logo/logo_black.png    1x,
-              images/logo/logo_black@2x.png 2x
+              images/logo/logo_white.png    1x,
+              images/logo/logo_white@2x.png 2x
             "
             alt=""
         /></a>
@@ -87,13 +86,18 @@
               <a class="navigation-link" href="team.html">About</a>
             </li>
             <li>
-              <a class="navigation-link" href="/#how-it-works">How it works</a>
+              <a class="navigation-link" href="index.html#how-it-works"
+                >How it works</a
+              >
             </li>
-            <li>
+            <!-- <li>
               <a class="navigation-link" href="token.html">Token</a>
+            </li> -->
+            <li>
+              <a class="navigation-link" href="business.html">For business</a>
             </li>
             <li>
-              <a class="navigation-link" href="/#for-business">For business</a>
+              <a class="navigation-link" href="index.html#faq">FAQ</a>
             </li>
             <li>
               <a
@@ -122,45 +126,57 @@
                 </li>
               </ul>
             </li>
+            <li class="d-lg-none m-5">
+              <a href="index.html#download" class="download-btn">
+                Download Casho now
+                <img
+                  srcset="
+                    images/icons/download.png    1x,
+                    images/icons/download@2x.png 2x
+                  "
+                  alt=""
+                />
+              </a>
+            </li>
           </ul>
         </nav>
 
         <div class="mobile-navigation-btn">
           <img
-            src="images/icons/ic_round-menu-dark.png"
+            src="images/icons/ic_round-menu.png"
             class="mobile-nav-icon menu"
             alt=""
           />
           <img
-            src="images/icons/close.png"
+            srcset="images/icons/close.png 1x, images/icons/close@2x.png 2x"
             class="mobile-nav-icon close"
             alt=""
           />
         </div>
       </header>
+      <div class="container">
+        <h1 class="teams-title my-5">
+          We are Empowering Users, Democratizing Data, and Creating a
+          Sustainable Data Market
+        </h1>
+        <p class="teams-content">
+          Casho is a revolutionary consent-based data platform that puts users
+          back in control of their personal data. Unlike traditional data
+          platforms, Casho ensures that users are compensated fairly for sharing
+          their anonymized data, allowing them to actively benefit from their
+          own information.
+        </p>
+        <p class="teams-content">
+          Our mission is to democratize data by providing a permissioned and
+          privacy-by-design environment where individuals have complete control
+          over their data, and where data buyers, users, and society can benefit
+          from high-quality and responsibly used data.
+        </p>
+      </div>
     </section>
 
     <section>
-      <div class="container padding-0" style="padding-bottom: 160px !important">
-        <div class="py-lg-5 my-lg-5">
-          <h1 class="teams-title my-5 mt-lg-0">
-            We are Empowering Users, Democratizing Data, and Creating a
-            Sustainable Data Market
-          </h1>
-          <p class="teams-content">
-            Casho is a revolutionary consent-based data platform that puts users
-            back in control of their personal data. Unlike traditional data
-            platforms, Casho ensures that users are compensated fairly for
-            sharing their anonymized data, allowing them to actively benefit
-            from their own information.
-          </p>
-          <p class="teams-content">
-            Our mission is to democratize data by providing a permissioned and
-            privacy-by-design environment where individuals have complete
-            control over their data, and where data buyers, users, and society
-            can benefit from high-quality and responsibly used data.
-          </p>
-        </div>
+      <div class="container padding-0">
         <div class="my-5 py-5">
           <h2 class="team-heading mb-lg-5 pb-lg-5">The Casho Team</h2>
           <div class="row my-lg-5 py-lg-5">
@@ -311,7 +327,7 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-column col-lg-3 col-md-6 mb-4 casho-card">
+            <!-- <div class="d-flex flex-column col-lg-3 col-md-6 mb-4 casho-card">
               <img
                 srcset="
                   images/team/member-5.png    1x,
@@ -325,18 +341,18 @@
                   <br />
                   Frontend developer
                 </p>
-                <!-- <p class="card-content">
+                <p class="card-content">
                   Serial entrepreneur, economist and web3 engineer on a mission
                   to build public utility networks.
-                </p> -->
+                </p>
                 <div class="d-flex social-icons">
-                  <!-- <img
+                  <img
                     srcset="
                       images/logo/logos_twitter.png    1x,
                       images/logo/logos_twitter@2x.png 2x
                     "
                     alt=""
-                  /> -->
+                  />
                   <a
                     href="https://www.linkedin.com/in/srmaurya/"
                     target="_blank"
@@ -364,18 +380,18 @@
                   Yash<br />
                   Backend developer
                 </p>
-                <!-- <p class="card-content">
+                <p class="card-content">
                   Serial entrepreneur, economist and web3 engineer on a mission
                   to build public utility networks.
-                </p> -->
+                </p>
                 <div class="d-flex social-icons">
-                  <!-- <img
+                  <img
                     srcset="
                       images/logo/logos_twitter.png    1x,
                       images/logo/logos_twitter@2x.png 2x
                     "
                     alt=""
-                  /> -->
+                  />
                   <a
                     href="https://www.linkedin.com/in/yash-makwana-80285b1a6/"
                     target="_blank"
@@ -388,35 +404,123 @@
                   /></a>
                 </div>
               </div>
-            </div>
-            <div
+            </div> -->
+            <!-- <div
               class="d-flex flex-column align-items-center col-lg-6 col-md-6 my-4"
             >
               <h3 class="hiring-title my-5">"We are <span>hiring</span>"</h3>
               <a href="mailto:info@casho.co" class="join-team-btn my-3"
                 >Join our team</a
               >
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="text-center d-none d-lg-block">
+      <h3
+        style="
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 50px;
+          padding-bottom: 48px;
+        "
+      >
+        We're Hiring.
+      </h3>
+      <p
+        style="
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 25px;
+          max-width: 755px;
+          margin-left: auto;
+          margin-right: auto;
+        "
+      >
+        Casho is built by a team of people with diverse backgrounds who
+        genuinely love working together. Help us transform the data economy and
+        build a product consumers & companies love to use.
+      </p>
+      <img
+        srcset="images/team-hiring.png 1x, images/team-hiring@2x.png 2x"
+        class="d-block mx-auto img-fluid"
+        alt=""
+      />
+      <a
+        href="https://www.linkedin.com/company/cashoco/jobs"
+        class="openings-btn"
+        >View Openings</a
+      >
+    </section>
+
+    <section class="text-center d-block d-lg-none">
+      <h3
+        class="mb-3"
+        style="
+          color: #6a38fd;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 36px;
+        "
+      >
+        We're Hiring.
+      </h3>
+      <p style="font-size: 14px; font-weight: 500; line-height: 25px">
+        Casho is built by a team of people with diverse backgrounds who
+        genuinely love working together. Help us transform the data economy and
+        build a product consumers & companies love to use.
+      </p>
+      <img
+        srcset="
+          images/team-hiring-mobile.png    1x,
+          images/team-hiring-mobile@2x.png 2x
+        "
+        class="d-block mx-auto img-fluid my-5 py-5"
+        alt=""
+      />
+      <!-- <h3
+        class="m-5"
+        style="font-size: 26px; font-weight: 600; line-height: 20px"
+      >
+        Want to join us?
+      </h3> -->
+      <a
+        href="https://www.linkedin.com/company/cashoco/jobs"
+        class="openings-btn"
+        >View Openings</a
+      >
     </section>
 
     <footer class="py-5 d-lg-block d-none">
       <section class="container">
         <div class="text-center text-lg-start mt-5">
           <div class="row mt-3">
-            <div class="col-lg-3 mx-auto mb-4">
-              <h6 class="title mb-4">Casho</h6>
+            <div class="col-lg-5 mx-auto mb-4">
+              <h6 class="title mb-4">
+                <img
+                  srcset="images/logo/CA$HO.png 1x, images/logo/CA$HO@2x.png 2x"
+                  alt=""
+                />
+              </h6>
               <div class="mb-5">
-                <label class="sub-title-footer"
-                  >Copyright © 2023 Casho app</label
+                <label
+                  class="sub-title-footer d-block mb-5"
+                  style="max-width: 335px"
+                  >Casho, a platform that empower users to learn insights & earn
+                  from their data
+                </label>
+                <label class="sub-title-footer d-block mb-2"
+                  >Copyright © 2023
+                </label>
+                <label class="sub-title-footer d-block"
+                  >All rights reserved</label
                 >
-                <label class="sub-title-footer">All rights reserved</label>
               </div>
               <div class="d-flex social-icons">
-                <a href="https://twitter.com/cashoco" target="_blank">
-                  <img
+                <a href="https://twitter.com/cashoco" target="_blank"
+                  ><img
                     class="cursor-pointer"
                     srcset="
                       images/logo/logos_twitter.png    1x,
@@ -453,12 +557,16 @@
                   "
                   alt=""
                 />
-                <a href="https://medium.com/@casho" target="_blank"
+                <a
+                  style="width: 32px"
+                  class="d-flex align-items-center justify-content-center"
+                  href="https://www.instagram.com/cashoco/"
+                  target="_blank"
                   ><img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_Medium.png    1x,
-                      images/logo/logos_Medium@2x.png 2x
+                      images/logo/ri_instagram-fill.png    1x,
+                      images/logo/ri_instagram-fill@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -483,8 +591,11 @@
               <p>
                 <a href="team.html" class="sub-title">About</a>
               </p>
+              <p>
+                <a href="index.html#faq" class="sub-title">FAQ</a>
+              </p>
             </div>
-            <div class="col-lg-3 mx-auto mb-4">
+            <div class="col-lg-2 mx-auto mb-4">
               <h6 class="footer-title mb-4">Resources</h6>
               <p>
                 <a
@@ -506,10 +617,10 @@
                 <a href="https://casho.co" class="sub-title">Privacy policy</a>
               </p>
             </div>
-            <div class="col-lg-4 mx-auto mb-lg-0 mb-4">
+            <div class="col-lg-3 mx-auto mb-lg-0 mb-4">
               <h6 class="footer-title mb-4">Download now</h6>
               <div class="d-flex flex-column align-items-start">
-                <a href="/#download"
+                <a href="index.html#download"
                   ><img
                     class="mb-2 d-block mx-auto img-fluid cursor-pointer"
                     srcset="
@@ -518,7 +629,7 @@
                     "
                     alt=""
                 /></a>
-                <a href="/#download"
+                <a href="index.html#download"
                   ><img
                     class="d-block mx-auto img-fluid cursor-pointer"
                     srcset="
@@ -537,11 +648,21 @@
       <section>
         <div class="mt-5">
           <div class="row mt-3">
-            <div class="mb-3">
-              <h6 class="title">Casho</h6>
+            <div class="mb-4 p-0">
+              <h6 class="title">
+                <img
+                  class="mb-5"
+                  srcset="images/logo/CA$HO.png 1x, images/logo/CA$HO@2x.png 2x"
+                  alt=""
+                />
+              </h6>
+              <label class="sub-title-footer d-block"
+                >Casho, a platform that empower users to learn insights & earn
+                from their data
+              </label>
             </div>
-            <div class="row pb-3">
-              <div class="col">
+            <div class="row pb-3 mt-5">
+              <div class="col p-0">
                 <h6 class="footer-title mb-4">Menu</h6>
                 <p>
                   <a href="/" class="sub-title">Home</a>
@@ -560,8 +681,11 @@
                 <p>
                   <a href="team.html" class="sub-title">About</a>
                 </p>
+                <p>
+                  <a href="index.html#faq" class="sub-title">FAQ</a>
+                </p>
               </div>
-              <div class="col">
+              <div class="col p-0">
                 <h6 class="footer-title mb-4">Resources</h6>
                 <p>
                   <a
@@ -586,14 +710,35 @@
                 </p>
               </div>
             </div>
-            <div>
+            <div class="mb-4 padding-0">
+              <h6 class="footer-title mb-4">Download now</h6>
+              <a href="index.html#download"
+                ><img
+                  class="img-fluid cursor-pointer"
+                  srcset="
+                    images/logo/app-store-badge.png    1x,
+                    images/logo/app-store-badge@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+              <a href="index.html#download"
+                ><img
+                  class="img-fluid cursor-pointer ms-2"
+                  srcset="
+                    images/logo/google-play-badge.png    1x,
+                    images/logo/google-play-badge@2x.png 2x
+                  "
+                  alt=""
+              /></a>
+            </div>
+            <div class="p-0">
               <div class="mb-4">
                 <div class="sub-title-footer">Copyright © 2023 Casho app</div>
                 <div class="sub-title-footer">All rights reserved</div>
               </div>
               <div class="d-flex social-icons py-3 my-4">
-                <a href="https://twitter.com/cashoco" target="_blank">
-                  <img
+                <a href="https://twitter.com/cashoco" target="_blank"
+                  ><img
                     class="cursor-pointer"
                     srcset="
                       images/logo/logos_twitter.png    1x,
@@ -613,7 +758,8 @@
                 <a
                   href="https://www.linkedin.com/company/cashoco/"
                   target="_blank"
-                  ><img
+                >
+                  <img
                     class="cursor-pointer"
                     srcset="
                       images/logo/logos_linkedin.png    1x,
@@ -639,27 +785,6 @@
                     alt=""
                 /></a>
               </div>
-            </div>
-            <div class="mb-4 padding-0">
-              <h6 class="footer-title mb-4">Download now</h6>
-              <a href="/#download"
-                ><img
-                  class="img-fluid cursor-pointer"
-                  srcset="
-                    images/logo/app-store-badge.png    1x,
-                    images/logo/app-store-badge@2x.png 2x
-                  "
-                  alt=""
-              /></a>
-              <a href="/#download"
-                ><img
-                  class="img-fluid cursor-pointer ms-2"
-                  srcset="
-                    images/logo/google-play-badge.png    1x,
-                    images/logo/google-play-badge@2x.png 2x
-                  "
-                  alt=""
-              /></a>
             </div>
           </div>
         </div>
