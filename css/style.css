@@ -175,7 +175,7 @@ footer {
 
   .platform-img {
     min-height: 55px;
-    min-width: 98px;
+    min-width: 90px;
     border-radius: 13px;
   }
 
@@ -285,6 +285,8 @@ footer {
   }
 
   .hero-title {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 32px !important;
     font-weight: 700 !important;
@@ -292,6 +294,8 @@ footer {
   }
 
   .hero-sub-title {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 14px !important;
     line-height: 21px !important;
@@ -317,6 +321,10 @@ footer {
   }
   .iphone-img {
     width: 80%;
+  }
+
+  .iphone-2 {
+    max-width: 218px !important;
   }
 
   .brand-bg {
@@ -421,7 +429,6 @@ footer {
     line-height: 20px !important;
   }
   .faq-title > img {
-    height: 9px;
     width: 15px;
   }
 
@@ -541,6 +548,42 @@ footer {
     width: 243px;
     padding: 10px;
   }
+
+  .hero-image {
+    max-width: 273px !important;
+  }
+
+  .iphone-4,
+  .iPhone-13-pro,
+  .iphone-section-4,
+  .iPhone-12-pro {
+    max-width: 219px !important;
+  }
+}
+
+.iPhone-12-pro {
+  max-width: 268px;
+  height: auto;
+}
+
+.iPhone-13-pro {
+  max-width: 467px;
+  height: auto;
+}
+
+.iphone-section-4 {
+  max-width: 378px;
+  height: auto;
+}
+
+.iphone-2 {
+  max-width: 445px;
+  height: auto;
+}
+
+.iphone-4 {
+  max-width: 525px;
+  height: auto;
 }
 
 .data-section {
@@ -585,6 +628,11 @@ footer {
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
+}
+
+.hero-image {
+  max-width: 645px;
+  height: auto;
 }
 
 .gradient-bg {
