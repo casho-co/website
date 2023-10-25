@@ -17,7 +17,7 @@ task("reload", function (done) {
 
 task("html", function (cb) {
   return pipeline(
-    src(["./*.html"]),
+    src(["./**/*.html"]),
     htmlmin({
       collapseWhitespace: true,
       removeComments: true,
