@@ -1,0 +1,8 @@
+@import "common.css";
+@import "header.css";
+@import "footer.css";
+
+.page-bullets {
+  padding-top: 30px;
+  padding-left: 40px;
+}

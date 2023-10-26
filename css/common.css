@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sub-title {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+  color: #d9dbe1;
+}
+
+.gradient-bg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: image-set(
+    url("../images/background/line_texture.jpg") 1x,
+    url("../images/background/line_texture@2x.jpg") 2x
+  );
+  background-size: cover;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.background-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(64, 117, 255, 0.76) 0%,
+    rgba(172, 220, 211, 0) 100%
+  );
+}
+
+.background-gradient {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.background-gradient-mobile {
+  margin-top: 90px;
+  background: linear-gradient(
+    180deg,
+    rgba(64, 117, 255, 0.76) 0%,
+    rgba(172, 220, 211, 0) 60%
+  );
+}
+
+.page-title {
+  padding: 120px 0;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.page-sub-title {
+  padding: 5px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.page-content {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.page-content > span {
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 0 16px;
+  }
+
+  .padding-0 {
+    padding: 0 !important;
+  }
+
+  .page-content {
+    padding: 5px 0 0 0 !important;
+    font-size: 10px !important;
+    font-weight: 400 !important;
+  }
+
+  .page-sub-title {
+    padding: 0 !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+  }
+
+  .page-title {
+    padding: 30px 0 !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+  }
+}
