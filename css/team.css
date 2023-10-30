@@ -23,6 +23,7 @@
   font-weight: 700;
   line-height: 76px;
   max-width: 940px;
+  padding-top: 50px;
 }
 
 .teams-content {
@@ -76,6 +77,7 @@
   .teams-title {
     font-size: 24px !important;
     line-height: 36px !important;
+    padding: 0 !important;
   }
   .teams-content {
     font-size: 16px !important;
