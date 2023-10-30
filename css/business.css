@@ -133,6 +133,7 @@
   }
 
   .data-title {
+    text-align: center;
     justify-content: center !important;
     font-size: 20px !important;
     line-height: 23px !important;
