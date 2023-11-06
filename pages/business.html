@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/logo/logo.png"
+      href="../images/logo/logo.png"
     />
     <title>Casho - Earn from your data</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -46,14 +46,13 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/business.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
@@ -64,30 +63,31 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <main>
       <section class="gradient-bg" style="padding-bottom: 80px">
         <header class="header">
-          <a class="title" href="/"
+          <a class="title" href="../"
             ><img
               srcset="
-                images/logo/logo_white.png    1x,
-                images/logo/logo_white@2x.png 2x
+                ../images/logo/logo_white.png    1x,
+                ../images/logo/logo_white@2x.png 2x
               "
               alt=""
           /></a>
           <nav class="navigation">
             <ul class="navigation-list">
               <li>
-                <a class="navigation-link" aria-current="page" href="/">Home</a>
+                <a class="navigation-link" aria-current="page" href="../"
+                  >Home</a
+                >
               </li>
               <li>
-                <a class="navigation-link" href="team.html">About</a>
+                <a class="navigation-link" href="./team.html">About</a>
               </li>
               <li>
-                <a class="navigation-link" href="/#how-it-works"
+                <a class="navigation-link" href="../#how-it-works"
                   >How it works</a
                 >
               </li>
@@ -95,12 +95,14 @@
                 <a class="navigation-link" href="token.html">Token</a>
               </li> -->
               <li class="active current">
-                <a class="navigation-link" href="business.html">For business</a>
+                <a class="navigation-link" href="./business.html"
+                  >For business</a
+                >
               </li>
               <li>
-                <a class="navigation-link" href="/#faq">FAQ</a>
+                <a class="navigation-link" href="../#faq">FAQ</a>
               </li>
-              <li>
+              <li class="dropdown-center">
                 <a
                   class="navigation-link dropdown-toggle"
                   href="#"
@@ -110,7 +112,7 @@
                 >
                   Resources
                   <img
-                    src="images/icons/chevron-up.png"
+                    src="../images/icons/chevron-up.png"
                     class="ms-2 mt-1"
                     style="width: 10px"
                     alt=""
@@ -119,7 +121,7 @@
                 <ul class="dropdown-menu">
                   <li>
                     <a
-                      class="dropdown-item lg-text-center"
+                      class="dropdown-item text-center"
                       href="https://whitepaper.casho.co/"
                       target="_blank"
                       >White Paper</a
@@ -128,12 +130,12 @@
                 </ul>
               </li>
               <li class="d-lg-none m-5">
-                <a href="/#download" class="download-btn">
+                <a href="../#download" class="download-btn">
                   Download Casho now
                   <img
                     srcset="
-                      images/icons/download.png    1x,
-                      images/icons/download@2x.png 2x
+                      ../images/icons/download.png    1x,
+                      ../images/icons/download@2x.png 2x
                     "
                     alt=""
                   />
@@ -144,12 +146,15 @@
 
           <div class="mobile-navigation-btn">
             <img
-              src="images/icons/ic_round-menu.png"
+              src="../images/icons/ic_round-menu.png"
               class="mobile-nav-icon menu"
               alt=""
             />
             <img
-              srcset="images/icons/close.png 1x, images/icons/close@2x.png 2x"
+              srcset="
+                ../images/icons/close.png    1x,
+                ../images/icons/close@2x.png 2x
+              "
               class="mobile-nav-icon close"
               alt=""
             />
@@ -168,25 +173,28 @@
       </section>
 
       <section>
-        <h3 class="text-center mb-5 business-sub-title">
+        <h3 class="text-center my-5 business-sub-title">
           Tap into zero-party data with Casho
         </h3>
         <img
           class="d-lg-block d-none mx-auto img-fluid"
-          srcset="images/business-image.png 1x, images/business-image@2x.png 2x"
+          srcset="
+            ../images/business-image.png    1x,
+            ../images/business-image@2x.png 2x
+          "
           alt=""
         />
         <img
           class="d-lg-none d-block mx-auto img-fluid"
           srcset="
-            images/business-image-mobile.png    1x,
-            images/business-image-mobile@2x.png 2x
+            ../images/business-image-mobile.png    1x,
+            ../images/business-image-mobile@2x.png 2x
           "
           alt=""
         />
       </section>
 
-      <section class="px-lg-5 mx-lg-5 data-section">
+      <section class="data-section">
         <h3 class="text-center business-brand-title">What do we cover?</h3>
         <div
           class="d-flex flex-column flex-lg-row"
@@ -238,7 +246,7 @@
             </ul>
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center book-demo-btn-container">
           <a href="mailto:info@casho.co" class="book-demo-btn">Book a demo</a>
         </div>
       </section>
@@ -251,7 +259,10 @@
             <div class="col-lg-5 mx-auto mb-4">
               <h6 class="title mb-4">
                 <img
-                  srcset="images/logo/CA$HO.png 1x, images/logo/CA$HO@2x.png 2x"
+                  srcset="
+                    ../images/logo/CA$HO.png    1x,
+                    ../images/logo/CA$HO@2x.png 2x
+                  "
                   alt=""
                 />
               </h6>
@@ -274,8 +285,8 @@
                   ><img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_twitter.png    1x,
-                      images/logo/logos_twitter@2x.png 2x
+                      ../images/logo/logos_twitter.png    1x,
+                      ../images/logo/logos_twitter@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -283,8 +294,8 @@
                   ><img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_telegram.png    1x,
-                      images/logo/logos_telegram@2x.png 2x
+                      ../images/logo/logos_telegram.png    1x,
+                      ../images/logo/logos_telegram@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -295,16 +306,16 @@
                   <img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_linkedin.png    1x,
-                      images/logo/logos_linkedin@2x.png 2x
+                      ../images/logo/logos_linkedin.png    1x,
+                      ../images/logo/logos_linkedin@2x.png 2x
                     "
                     alt=""
                 /></a>
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logo/logos_youtube.png    1x,
-                    images/logo/logos_youtube@2x.png 2x
+                    ../images/logo/logos_youtube.png    1x,
+                    ../images/logo/logos_youtube@2x.png 2x
                   "
                   alt=""
                 />
@@ -316,8 +327,8 @@
                   ><img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/ri_instagram-fill.png    1x,
-                      images/logo/ri_instagram-fill@2x.png 2x
+                      ../images/logo/ri_instagram-fill.png    1x,
+                      ../images/logo/ri_instagram-fill@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -326,10 +337,15 @@
             <div class="col-lg-2 mx-auto mb-4">
               <h6 class="footer-title mb-4">Menu</h6>
               <p>
-                <a href="/" class="sub-title">Home</a>
+                <a href="../" class="sub-title">Home</a>
               </p>
               <p>
-                <a href="https://blog.casho.co/" class="sub-title">Blog</a>
+                <a
+                  href="https://blog.casho.co/"
+                  target="_blank"
+                  class="sub-title"
+                  >Blog</a
+                >
               </p>
               <p>
                 <a
@@ -340,10 +356,10 @@
                 >
               </p>
               <p>
-                <a href="team.html" class="sub-title">About</a>
+                <a href="./team.html" class="sub-title">About</a>
               </p>
               <p>
-                <a href="/#faq" class="sub-title">FAQ</a>
+                <a href="../#faq" class="sub-title">FAQ</a>
               </p>
             </div>
             <div class="col-lg-2 mx-auto mb-4">
@@ -360,32 +376,32 @@
                 <a href="mailto:info@casho.co" class="sub-title">Contact</a>
               </p>
               <p>
-                <a href="https://casho.co" class="sub-title"
+                <a href="terms-of-service.html" class="sub-title"
                   >Terms of service</a
                 >
               </p>
               <p>
-                <a href="https://casho.co" class="sub-title">Privacy policy</a>
+                <a href="privacy.html" class="sub-title">Privacy policy</a>
               </p>
             </div>
             <div class="col-lg-3 mx-auto mb-lg-0 mb-4">
               <h6 class="footer-title mb-4">Download now</h6>
               <div class="d-flex flex-column align-items-start">
-                <a href="/#download"
+                <a href="../#download"
                   ><img
                     class="mb-2 d-block mx-auto img-fluid cursor-pointer"
                     srcset="
-                      images/logo/app-store-badge.png    1x,
-                      images/logo/app-store-badge@2x.png 2x
+                      ../images/logo/app-store-badge.png    1x,
+                      ../images/logo/app-store-badge@2x.png 2x
                     "
                     alt=""
                 /></a>
-                <a href="/#download"
+                <a href="../#download"
                   ><img
                     class="d-block mx-auto img-fluid cursor-pointer"
                     srcset="
-                      images/logo/google-play-badge.png    1x,
-                      images/logo/google-play-badge@2x.png 2x
+                      ../images/logo/google-play-badge.png    1x,
+                      ../images/logo/google-play-badge@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -403,7 +419,10 @@
               <h6 class="title">
                 <img
                   class="mb-5"
-                  srcset="images/logo/CA$HO.png 1x, images/logo/CA$HO@2x.png 2x"
+                  srcset="
+                    ../images/logo/CA$HO.png    1x,
+                    ../images/logo/CA$HO@2x.png 2x
+                  "
                   alt=""
                 />
               </h6>
@@ -416,10 +435,15 @@
               <div class="col p-0">
                 <h6 class="footer-title mb-4">Menu</h6>
                 <p>
-                  <a href="/" class="sub-title">Home</a>
+                  <a href="../" class="sub-title">Home</a>
                 </p>
                 <p>
-                  <a href="https://blog.casho.co/" class="sub-title">Blog</a>
+                  <a
+                    href="https://blog.casho.co/"
+                    target="_blank"
+                    class="sub-title"
+                    >Blog</a
+                  >
                 </p>
                 <p>
                   <a
@@ -430,10 +454,10 @@
                   >
                 </p>
                 <p>
-                  <a href="team.html" class="sub-title">About</a>
+                  <a href="./team.html" class="sub-title">About</a>
                 </p>
                 <p>
-                  <a href="/#faq" class="sub-title">FAQ</a>
+                  <a href="../#faq" class="sub-title">FAQ</a>
                 </p>
               </div>
               <div class="col p-0">
@@ -450,34 +474,32 @@
                   <a href="mailto:info@casho.co" class="sub-title">Contact</a>
                 </p>
                 <p>
-                  <a href="https://casho.co" class="sub-title"
+                  <a href="terms-of-service.html" class="sub-title"
                     >Terms of service</a
                   >
                 </p>
                 <p>
-                  <a href="https://casho.co" class="sub-title"
-                    >Privacy policy</a
-                  >
+                  <a href="privacy.html" class="sub-title">Privacy policy</a>
                 </p>
               </div>
             </div>
             <div class="mb-4 padding-0">
               <h6 class="footer-title mb-4">Download now</h6>
-              <a href="/#download"
+              <a href="../#download"
                 ><img
                   class="img-fluid cursor-pointer"
                   srcset="
-                    images/logo/app-store-badge.png    1x,
-                    images/logo/app-store-badge@2x.png 2x
+                    ../images/logo/app-store-badge.png    1x,
+                    ../images/logo/app-store-badge@2x.png 2x
                   "
                   alt=""
               /></a>
-              <a href="/#download"
+              <a href="../#download"
                 ><img
                   class="img-fluid cursor-pointer ms-2"
                   srcset="
-                    images/logo/google-play-badge.png    1x,
-                    images/logo/google-play-badge@2x.png 2x
+                    ../images/logo/google-play-badge.png    1x,
+                    ../images/logo/google-play-badge@2x.png 2x
                   "
                   alt=""
               /></a>
@@ -492,8 +514,8 @@
                   ><img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_twitter.png    1x,
-                      images/logo/logos_twitter@2x.png 2x
+                      ../images/logo/logos_twitter.png    1x,
+                      ../images/logo/logos_twitter@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -501,8 +523,8 @@
                   ><img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_telegram.png    1x,
-                      images/logo/logos_telegram@2x.png 2x
+                      ../images/logo/logos_telegram.png    1x,
+                      ../images/logo/logos_telegram@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -513,16 +535,16 @@
                   <img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_linkedin.png    1x,
-                      images/logo/logos_linkedin@2x.png 2x
+                      ../images/logo/logos_linkedin.png    1x,
+                      ../images/logo/logos_linkedin@2x.png 2x
                     "
                     alt=""
                 /></a>
                 <img
                   class="cursor-pointer"
                   srcset="
-                    images/logo/logos_youtube.png    1x,
-                    images/logo/logos_youtube@2x.png 2x
+                    ../images/logo/logos_youtube.png    1x,
+                    ../images/logo/logos_youtube@2x.png 2x
                   "
                   alt=""
                 />
@@ -530,8 +552,8 @@
                   ><img
                     class="cursor-pointer"
                     srcset="
-                      images/logo/logos_Medium.png    1x,
-                      images/logo/logos_Medium@2x.png 2x
+                      ../images/logo/logos_Medium.png    1x,
+                      ../images/logo/logos_Medium@2x.png 2x
                     "
                     alt=""
                 /></a>
@@ -541,11 +563,6 @@
         </div>
       </section>
     </footer>
-    <script src="js/index.js"></script>
-    <script>
-      AOS.init({
-        duration: 2000,
-      });
-    </script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,114 @@
+@import "common.css";
+@import "header.css";
+@import "footer.css";
+
+.utility-icon {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 30px;
+}
+
+.token-bg {
+  background: #fafafa;
+  padding-bottom: 50px;
+}
+
+.tokenomics-bg {
+  border-radius: 16px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    180deg,
+    rgba(64, 117, 255, 0.76) 0%,
+    rgba(172, 220, 211, 0) 40%
+  );
+}
+
+.token-section-heading {
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 103px;
+  color: #000000;
+}
+.token-section-content {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 39px;
+  color: #000000;
+}
+.token-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 39px;
+  color: #000000;
+}
+.token-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -1px;
+  color: #6a38fd;
+}
+
+.token-heading {
+  color: #000;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.token-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.token-card {
+  margin-bottom: 12px;
+  padding: 32px;
+  border-radius: 8px;
+  background: rgb(234, 234, 243, 0.30000001192092896);
+}
+
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 4s ease infinite;
+}
+
+.token-sub-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@media (max-width: 992px) {
+  .token-section-heading {
+    padding-top: 30px !important;
+    font-size: 28px !important;
+    line-height: 45px !important;
+  }
+
+  .token-subtitle {
+    font-size: 12px !important;
+    line-height: 24px !important;
+  }
+
+  .token-title {
+    font-size: 16px !important;
+  }
+
+  .token-bg {
+    background: #fff !important;
+    padding-bottom: 70px;
+  }
+}

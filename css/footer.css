@@ -1,0 +1,19 @@
+footer {
+  background: #23252e;
+  color: #fff;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.sub-title-footer {
+  font-size: 14px !important;
+  line-height: 24px !important;
+}
+
+.social-icons {
+  column-gap: 12px;
+}

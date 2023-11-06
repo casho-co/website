@@ -1,0 +1,551 @@
+@import "common.css";
+@import "header.css";
+@import "footer.css";
+
+.platform-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 122px;
+  min-width: 217px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 10px rgba(228, 228, 228, 0.25);
+}
+
+.iPhone-12-pro {
+  max-width: 268px;
+  height: auto;
+}
+
+.iPhone-13-pro {
+  max-width: 467px;
+  height: auto;
+}
+
+.iphone-section-4 {
+  max-width: 378px;
+  height: auto;
+}
+
+.iphone-2 {
+  max-width: 445px;
+  height: auto;
+}
+
+.iphone-4 {
+  max-width: 525px;
+  height: auto;
+}
+
+.coming-soon {
+  margin-bottom: 10px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14px;
+  width: 128px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(309deg, #6c4efe 0%, #1fd9f2 100%);
+}
+
+.hero-image {
+  max-width: 645px;
+  height: auto;
+}
+
+.roadmap-image {
+  right: 5%;
+  width: 90% !important;
+  top: 54%;
+}
+
+.roadmap-bg {
+  height: 1280px;
+  background-repeat: no-repeat;
+  background-image: image-set(
+    url("../images/background/roadmap-bg.png") 1x,
+    url("../images/background/roadmap-bg@2x.png") 2x
+  );
+  background-size: cover;
+}
+
+.brand-bg {
+  max-height: 464px;
+  padding: 120px;
+  background-repeat: no-repeat;
+  background-image: image-set(
+    url("../images/background/brand-bg.png") 1x,
+    url("../images/background/brand-bg@2x.png") 2x
+  );
+  background-size: cover;
+}
+
+.brand-bg .learn-button {
+  background: #ffffff;
+  color: #6c4efe;
+}
+
+.hero-title {
+  max-width: 536px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  color: #000000;
+}
+
+.hero-sub-title {
+  max-width: 480px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.learn-button {
+  border: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 263px;
+  height: 52px;
+  background: #6c4efe;
+  border-radius: 18px;
+}
+
+.ai-background {
+  background: linear-gradient(
+    186deg,
+    rgba(223, 214, 255, 0.53) 9.3%,
+    rgba(232, 225, 254, 0.72) 42.75%,
+    rgba(238, 233, 253, 0.52) 65.53%,
+    rgba(178, 166, 216, 0) 171.19%
+  );
+}
+
+.ai-agent-title {
+  background: linear-gradient(309deg, #6c4efe 21.17%, #1fd9f2 91.79%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.ai-agent-content {
+  color: #000;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+.section-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #737373;
+}
+
+.highlight-text {
+  color: #6a38fd;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+.slider {
+  background: #000;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider .slide-track {
+  height: 110px;
+  animation: scroll 10s linear infinite;
+}
+.slider .slide {
+  width: fit-content;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 89px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.brand-title {
+  color: #fff;
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 100px;
+}
+.brand-content {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.disable-on-hover:hover {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+#faq {
+  padding-left: 120px;
+  padding-right: 120px;
+  color: #fff;
+  background-color: #23252e;
+}
+
+.faq-item.active .faq-content {
+  display: block !important;
+}
+
+.faq-item.active .faq-title > img {
+  transform: rotate(180deg);
+}
+
+.faq-heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  padding-bottom: 80px;
+}
+
+.faq-title {
+  cursor: pointer;
+  border-top: 1px solid #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.faq-content {
+  display: none;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.shopping-section-heading {
+  font-size: 6.4rem;
+  font-weight: 800;
+  line-height: 100px;
+}
+
+.shopping-section-sub-heading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #171717;
+}
+
+.animated-header.earn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes width-steps {
+  1.6666666667%,
+  15% {
+    width: 0.15625em;
+  }
+  18.3333333333%,
+  31.6666666667% {
+    width: 5.046875em;
+  }
+  35%,
+  48.3333333333% {
+    width: 3.953125em;
+  }
+  51.6666666667%,
+  65% {
+    width: 4.265625em;
+  }
+  68.3333333333%,
+  81.6666666667% {
+    width: 4.90625em;
+  }
+  85%,
+  98.3333333333% {
+    width: 2.6875em;
+  }
+}
+@keyframes opacity-steps {
+  0%,
+  16.6666666667% {
+    opacity: 0;
+  }
+  1.6666666667%,
+  15% {
+    opacity: 1;
+  }
+}
+
+.animated-header.earn .source {
+  display: inline-grid;
+  grid-template: 1fr/1fr;
+  overflow: hidden;
+  justify-items: center;
+  justify-content: center;
+  width: 0.3125em;
+  animation: width-steps 14s ease-in-out infinite;
+}
+.animated-header.earn .source > span {
+  color: #fff;
+  grid-area: 1/1;
+  opacity: 0;
+  animation: opacity-steps 14s ease-in-out infinite;
+}
+.animated-header.earn .source > span.shopping {
+  animation-delay: 2.3333333333s;
+}
+.animated-header.earn .source > span.google {
+  animation-delay: 4.6666666667s;
+}
+.animated-header.earn .source > span.amazon {
+  animation-delay: 7s;
+}
+.animated-header.earn .source > span.browsing {
+  animation-delay: 9.3333333333s;
+}
+.animated-header.earn .source > span.uber {
+  animation-delay: 11.6666666667s;
+}
+
+@media (max-width: 992px) {
+  .iphone-4,
+  .iPhone-13-pro,
+  .iphone-section-4,
+  .iPhone-12-pro {
+    max-width: 219px !important;
+  }
+
+  .roadmap-bg {
+    height: auto !important;
+  }
+  .roadmap-bg .brand-title {
+    font-size: 32px !important;
+    line-height: 35px !important;
+  }
+
+  .brand-bg {
+    padding: 36px !important;
+  }
+
+  .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 41.3px !important;
+  }
+
+  .hero-sub-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+  .learn-button {
+    width: 179px !important;
+    height: 42px !important;
+    font-size: 12px !important;
+    border-radius: 8px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .ai-background {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .ai-agent-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .ai-agent-content {
+    font-size: 14px !important;
+  }
+
+  .slider .slide-track {
+    height: 63px !important;
+  }
+  .slider .slide {
+    font-size: 26px !important;
+    line-height: 50px !important;
+  }
+
+  .platform-container > div:first-child,
+  .platform-container > div:last-child {
+    display: none !important;
+  }
+
+  .platform-img {
+    min-height: 55px;
+    min-width: 90px;
+    border-radius: 13px;
+  }
+
+  .section-heading {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    margin-top: 48px;
+  }
+
+  .section-content {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .iphone-img {
+    width: 80%;
+  }
+
+  .iphone-2 {
+    max-width: 218px !important;
+  }
+
+  .brand-title {
+    padding-bottom: 20px !important;
+    font-size: 50px !important;
+    line-height: 58px !important;
+  }
+  .brand-content {
+    padding-bottom: 30px !important;
+  }
+
+  .animated-header.earn > :first-child {
+    flex-basis: 100%;
+  }
+
+  #faq {
+    padding: 30px !important;
+  }
+
+  .faq-heading {
+    padding-bottom: 40px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+  }
+
+  .faq-title {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+  }
+  .faq-title > img {
+    width: 15px;
+  }
+
+  .faq-content {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    padding-top: 6px !important;
+  }
+
+  .shopping-section-heading {
+    font-size: 3.2rem !important;
+    line-height: 43px !important;
+  }
+
+  .shopping-section-sub-heading {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 28px !important;
+  }
+
+  .timeline ul li {
+    list-style: none;
+    position: relative;
+  }
+
+  .timeline li .item {
+    padding-left: 24px;
+    min-height: 194px;
+    border-left: 4px solid #6e4bee;
+  }
+  .timeline li:last-child .item {
+    border-left: 4px solid transparent;
+  }
+  .timeline li .item > span img {
+    width: 30px;
+  }
+  .timeline li .item > span {
+    position: absolute;
+    top: -15px;
+    left: -14px;
+  }
+  .timeline .content .title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .timeline .content .title span {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+
+  .timeline .content {
+    position: absolute;
+    top: -20px;
+  }
+
+  .timeline .content > p {
+    border-radius: 10px;
+    background: #6c4efe;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    width: 243px;
+    padding: 10px;
+  }
+
+  .hero-image {
+    max-width: 273px !important;
+  }
+}
