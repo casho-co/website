@@ -29,9 +29,9 @@ task("html", function (cb) {
 
 task("js", function (cb) {
   return pipeline(
-    src(["./js/index.js"]),
+    src(["./js/*.js"]),
     minify({ noSource: true }),
-    rename("index.js"),
+    // rename("index.js"),
     dest("./dist/js"),
     cb
   );
