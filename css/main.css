@@ -67,8 +67,8 @@
   height: 1280px;
   background-repeat: no-repeat;
   background-image: image-set(
-    url("../images/background/roadmap-bg.png") 1x,
-    url("../images/background/roadmap-bg@2x.png") 2x
+    url("../images/background/roadmap-bg.webp") 1x,
+    url("../images/background/roadmap-bg@2x.webp") 2x
   );
   background-size: cover;
 }
@@ -78,8 +78,8 @@
   padding: 120px;
   background-repeat: no-repeat;
   background-image: image-set(
-    url("../images/background/brand-bg.png") 1x,
-    url("../images/background/brand-bg@2x.png") 2x
+    url("../images/background/brand-bg.webp") 1x,
+    url("../images/background/brand-bg@2x.webp") 2x
   );
   background-size: cover;
 }
