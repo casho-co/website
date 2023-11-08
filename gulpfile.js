@@ -30,7 +30,12 @@ task("html", function (cb) {
 task("js", function (cb) {
   return pipeline(
     src(["./js/*.js"]),
-    minify({ noSource: true }),
+    minify({
+      ext: {
+        min: ".js",
+      },
+      noSource: true,
+    }),
     // rename("index.js"),
     dest("./dist/js"),
     cb
