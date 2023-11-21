@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp html && gulp js && gulp css && gulp copy-images"
   },
   "author": "",
   "license": "ISC",
