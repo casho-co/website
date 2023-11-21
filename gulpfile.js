@@ -29,9 +29,14 @@ task("html", function (cb) {
 
 task("js", function (cb) {
   return pipeline(
-    src(["./js/index.js"]),
-    minify({ noSource: true }),
-    rename("index.js"),
+    src(["./js/*.js"]),
+    minify({
+      ext: {
+        min: ".js",
+      },
+      noSource: true,
+    }),
+    // rename("index.js"),
     dest("./dist/js"),
     cb
   );
@@ -41,17 +46,17 @@ task("css", function (cb) {
   return pipeline(src(["./css/*.css"]), cleanCSS(), dest("dist/css"), cb);
 });
 
-task("images", function (cb) {
-  return pipeline(
-    src(["./images/**/*"]),
-    imagemin({
-      progressive: true,
-    }),
-    webp(),
-    dest("dist/images"),
-    cb
-  );
-});
+// task("images", function (cb) {
+//   return pipeline(
+//     src(["./images/**/*"]),
+//     imagemin({
+//       progressive: true,
+//     }),
+//     webp(),
+//     dest("dist/images"),
+//     cb
+//   );
+// });
 
 task("browser-sync", function () {
   browserSync.init({
@@ -63,7 +68,7 @@ task("browser-sync", function () {
 
 task(
   "default",
-  series("js", "images", "css", "html", () => {
+  series("js", "css", "html", () => {
     browserSync.init({
       server: {
         baseDir: "./dist",
@@ -71,9 +76,9 @@ task(
     });
 
     log("Starting Watch...");
-    watch("./**/*.js", series("js", "images", "css", "html", "reload"));
+    watch("./**/*.js", series("js", "css", "html", "reload"));
     watch("./**/*.css", series("css", "reload"));
-    watch("./images/*", series("images", "reload"));
+    // watch("./images/*", series("images", "reload"));
     watch("./*.html", series("html", "reload"));
   })
 );

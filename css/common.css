@@ -34,8 +34,8 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-image: image-set(
-    url("../images/background/line_texture.jpg") 1x,
-    url("../images/background/line_texture@2x.jpg") 2x
+    url("../images/background/line_texture.webp") 1x,
+    url("../images/background/line_texture@2x.webp") 2x
   );
   background-size: cover;
 }
