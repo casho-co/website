@@ -46,17 +46,17 @@ task("css", function (cb) {
   return pipeline(src(["./css/*.css"]), cleanCSS(), dest("dist/css"), cb);
 });
 
-// task("images", function (cb) {
-//   return pipeline(
-//     src(["./images/**/*"]),
-//     imagemin({
-//       progressive: true,
-//     }),
-//     webp(),
-//     dest("dist/images"),
-//     cb
-//   );
-// });
+task("copy-images", function (cb) {
+  return pipeline(
+    src(["./images/**/*"]),
+    // imagemin({
+    //   progressive: true,
+    // }),
+    // webp(),
+    dest("dist/images"),
+    cb
+  );
+});
 
 task("browser-sync", function () {
   browserSync.init({
@@ -68,7 +68,7 @@ task("browser-sync", function () {
 
 task(
   "default",
-  series("js", "css", "html", () => {
+  series("js", "css", "html", "copy-images", () => {
     browserSync.init({
       server: {
         baseDir: "./dist",
@@ -78,7 +78,7 @@ task(
     log("Starting Watch...");
     watch("./**/*.js", series("js", "css", "html", "reload"));
     watch("./**/*.css", series("css", "reload"));
-    // watch("./images/*", series("images", "reload"));
+    watch("./images/*", series("copy-images", "reload"));
     watch("./*.html", series("html", "reload"));
   })
 );
